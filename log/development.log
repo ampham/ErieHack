@@ -1006,3 +1006,135 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 669ms (Views: 609.7ms | ActiveRecord: 0.8ms)
 
 
+Started GET "/" for 127.0.0.1 at 2016-07-12 20:45:55 -0400
+Started GET "/" for 127.0.0.1 at 2016-07-12 20:45:55 -0400
+Started GET "/" for 127.0.0.1 at 2016-07-12 20:45:55 -0400
+Processing by StaticPagesController#home as HTML
+Processing by StaticPagesController#home as HTML
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1940.3ms)
+  Rendered static_pages/home.html.erb within layouts/application (2574.3ms)
+  Rendered static_pages/home.html.erb within layouts/application (2477.4ms)
+Completed 500 Internal Server Error in 9908ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (can't add a new key into hash during iteration):
+Completed 500 Internal Server Error in 9887ms (ActiveRecord: 0.0ms)
+
+
+    3:   <head>
+  
+    4:     <title><%= full_title(yield(:title)) %></title>
+ActionView::Template::Error (can't add a new key into hash during iteration):
+    5:     <%= csrf_meta_tags %>
+    3:   <head>
+    6:     <%= stylesheet_link_tag    'application', media: 'all',
+    7:                                               'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:     <%= render 'layouts/shim' %>
+  
+app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___525847431__641040328'
+    4:     <title><%= full_title(yield(:title)) %></title>
+    5:     <%= csrf_meta_tags %>
+    6:     <%= stylesheet_link_tag    'application', media: 'all',
+    7:                                               'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:     <%= render 'layouts/shim' %>
+  
+app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___525847431__639919208'
+  Rendered layouts/_shim.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (49.9ms)
+  Rendered layouts/_footer.html.erb (17.0ms)
+Completed 200 OK in 23043ms (Views: 22441.3ms | ActiveRecord: 0.0ms)
+
+
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (417.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (452.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (32.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (68.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (19.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (888.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (907.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (6.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (1.2ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (215.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (11.2ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (4.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (29.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (700.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (34.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (735.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (1126.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (1204.5ms)
+Started GET "/" for 127.0.0.1 at 2016-07-12 20:48:32 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (33.6ms)
+  Rendered layouts/_shim.html.erb (5.2ms)
+  Rendered layouts/_header.html.erb (4.6ms)
+  Rendered layouts/_footer.html.erb (22.0ms)
+Completed 200 OK in 885ms (Views: 873.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2016-07-12 20:48:39 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (32.3ms)
+  Rendered users/new.html.erb within layouts/application (151.3ms)
+  Rendered layouts/_shim.html.erb (22.4ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (19.8ms)
+Completed 200 OK in 570ms (Views: 524.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-07-12 20:49:02 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ItxLWlLqJGbm+32PMrdxtfJAS5bOGKbptiLwKaX/i1FK4hO181/XvlDyMAGg2yzm87EFc2fjHRhz4LMeokjLVQ==", "user"=>{"name"=>"Ghost Buster", "email"=>"smiler@ny.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (51.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "smiler@ny.com"], ["LIMIT", 1]]
+  [1m[35mSQL (19.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ghost Buster"], ["email", "smiler@ny.com"], ["created_at", 2016-07-13 00:49:03 UTC], ["updated_at", 2016-07-13 00:49:03 UTC], ["password_digest", "$2a$10$ijm1H7NeAjBpjuiMDYfl4OW8sqbS4zGgutBG9pDavhumOBZ.NsEZy"]]
+  [1m[35m (158.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 443ms (ActiveRecord: 229.8ms)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2016-07-12 20:49:03 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (11.3ms)
+  Rendered layouts/_shim.html.erb (13.9ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (9.3ms)
+Completed 200 OK in 603ms (Views: 576.2ms | ActiveRecord: 0.3ms)
+
+
