@@ -1159,3 +1159,1063 @@ Processing by UsersController#new as HTML
 Completed 200 OK in 237ms (Views: 234.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2016-07-12 21:11:49 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3425.3ms)
+  Rendered layouts/_shim.html.erb (49.8ms)
+  Rendered layouts/_header.html.erb (185.8ms)
+  Rendered layouts/_footer.html.erb (187.1ms)
+Completed 200 OK in 24999ms (Views: 24658.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2016-07-12 21:12:25 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.1.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.1.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.1.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.1.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2016-07-12 21:12:28 -0400
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2016-07-12 21:12:28 -0400
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.1.1) lib/web_console/middleware.rb:131:in `call_app'
+  
+web-console (3.1.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.1.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.1.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.1.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.1.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.1.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.1.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (128.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (224.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered collection of /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [14 times] (459.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (21.8ms)
+  Rendered collection of /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [14 times] (558.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (30.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (276.3ms)
+  Rendered collection of /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [14 times] (231.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (60.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1758.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (13.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1937.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (208.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (30.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (20.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1734.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (25.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (50.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (11.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+Started GET "/favicon.ico" for 127.0.0.1 at 2016-07-12 21:12:33 -0400
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (25.1ms)
+Started GET "/favicon.ico" for 127.0.0.1 at 2016-07-12 21:12:33 -0400
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.1.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.1.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.1.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.1.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.1ms)
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.1.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.1.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.1.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.1.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (28.2ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (101.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (1142.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (1010.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (830.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (8.2ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (20.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (1676.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (1796.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (1573.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (30.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (17.0ms)
+  Rendered collection of /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [14 times] (54.5ms)
+  Rendered collection of /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [14 times] (78.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (45.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (12.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (500.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (449.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (21.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (10.2ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (11.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (7.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (11.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (148.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (332.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (429.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (580.3ms)
+Started GET "/" for 127.0.0.1 at 2016-07-12 21:47:00 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2103.3ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 2604ms (Views: 2553.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2016-07-12 21:47:18 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.3ms)
+  Rendered users/new.html.erb within layouts/application (154.3ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 370ms (Views: 304.5ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-12 21:47:20 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (14.8ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 175ms (Views: 172.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2016-07-12 21:47:21 -0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 245ms (Views: 222.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2016-07-12 21:47:23 -0400
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 149ms (Views: 134.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-12 21:47:24 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (10.4ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 158ms (Views: 155.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-12 21:47:26 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 149ms (Views: 147.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-13 09:34:53 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (8422.5ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 11697ms (Views: 10612.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2016-07-13 09:36:05 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.1.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.1.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.1.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.1.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered collection of /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [17 times] (126.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (26.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (33.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (282.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (143.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (189.5ms)
+Started GET "/favicon.ico" for 127.0.0.1 at 2016-07-13 09:36:06 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.1.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.1.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.1.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.1.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered collection of /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [17 times] (14.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (16.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (99.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (47.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (83.7ms)
+Started GET "/login" for 127.0.0.1 at 2016-07-13 09:37:51 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (48.0ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 493ms (Views: 479.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-07-13 09:37:54 -0400
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for SessionsController):
+  
+actionpack (5.0.0) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.0) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.0) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.0) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.0) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.1.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.1.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.1.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.1.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (1.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (62.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (2.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (108.5ms)
+Started POST "/login" for 127.0.0.1 at 2016-07-13 09:47:10 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k+Rt7pRQ978DUW3cb+0CVHII3dG7YvR0CPOtDmYkAJJWju0QAQPx+3ncThijyl69dTfzBqc+BIFzdlXBAs9dkA==", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 317ms (Views: 315.6ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Tony Tiger"], ["LIMIT", 1]]
+Started POST "/login" for 127.0.0.1 at 2016-07-13 10:19:13 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Bi3MzaDuYxSlbhyy0O5Kygd5RbPay539wmmqVVHGyeu/exNIq6VDnHnTg7cTfvA472NraoU2XaRTna8DBvrwlw==", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (91.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (100.1ms)
+  Rendered layouts/_shim.html.erb (7.4ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 3196ms (Views: 2152.1ms | ActiveRecord: 108.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-13 10:19:23 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (124.4ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (8.3ms)
+  Rendered layouts/_footer.html.erb (9.0ms)
+Completed 200 OK in 581ms (Views: 553.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2016-07-13 11:25:06 -0400
+Started GET "/signup" for 127.0.0.1 at 2016-07-13 11:25:18 -0400
+Processing by UsersController#new as HTML
+Started GET "/signup" for 127.0.0.1 at 2016-07-13 11:26:06 -0400
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (140.7ms)
+  Rendered users/new.html.erb within layouts/application (3996.0ms)
+  Rendered layouts/_shim.html.erb (24.3ms)
+  Rendered layouts/_header.html.erb (65.0ms)
+  Rendered layouts/_footer.html.erb (27.9ms)
+Completed 200 OK in 14388ms (Views: 10825.5ms | ActiveRecord: 163.5ms)
+
+
+Processing by UsersController#new as HTML
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 716ms (Views: 557.7ms | ActiveRecord: 2.4ms)
+
+
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (168.0ms)
+  Rendered users/new.html.erb within layouts/application (1506.1ms)
+  Rendered layouts/_shim.html.erb (83.8ms)
+  Rendered layouts/_header.html.erb (108.0ms)
+  Rendered layouts/_footer.html.erb (86.7ms)
+Completed 200 OK in 19491ms (Views: 12672.0ms | ActiveRecord: 1651.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-07-13 11:27:01 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"diD1Uga4eMW0USR5lQnr20iIJFyPpm533n9qByEJ/0fPdirXDfNYTWjsu3xWmVEpoJIKhdBbri5Pi29RdjXGOw==", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (23.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (11.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (150.6ms)
+  Rendered users/new.html.erb within layouts/application (194.0ms)
+  Rendered layouts/_shim.html.erb (6.7ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (12.0ms)
+Completed 200 OK in 2416ms (Views: 669.2ms | ActiveRecord: 37.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-07-13 11:27:10 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (25.0ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (9.3ms)
+Completed 200 OK in 1624ms (Views: 1578.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-07-13 11:27:14 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yFvIjkdrfvHvKfGK1sZsW4ZV8W3VAzD86AbxcBjpT0gNMUhw0jh4tZWk0k4a4TCygWrfuslfwAmTgwm/fAISSg==", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (44.2ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (13.2ms)
+  Rendered layouts/_footer.html.erb (7.4ms)
+Completed 200 OK in 912ms (Views: 890.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-13 11:27:46 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (117.0ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (1.8ms)
+Completed 200 OK in 1239ms (Views: 1201.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2016-07-13 11:27:48 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (12.2ms)
+  Rendered users/new.html.erb within layouts/application (44.1ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (19.9ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 343ms (Views: 339.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-07-13 11:27:50 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 207ms (Views: 204.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2016-07-13 11:27:51 -0400
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (28.7ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 447ms (Views: 398.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-07-13 11:27:52 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_shim.html.erb (3.4ms)
+  Rendered layouts/_header.html.erb (6.1ms)
+  Rendered layouts/_footer.html.erb (1.8ms)
+Completed 200 OK in 190ms (Views: 176.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-07-13 11:27:53 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b7q2oymWahPuJDZGLJ2sbBdxIySeOo6VrCMpfl0vps6q0DZdvMVsV5SpFYLguvCFEE4N84JmfmDXptGxOcT7zA==", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (18.0ms)
+  Rendered layouts/_shim.html.erb (4.2ms)
+  Rendered layouts/_header.html.erb (19.6ms)
+  Rendered layouts/_footer.html.erb (650.0ms)
+Completed 200 OK in 1092ms (Views: 1088.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-13 11:27:56 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (17.5ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 171ms (Views: 168.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-07-13 11:27:58 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 199ms (Views: 196.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-13 11:28:06 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (10.3ms)
+  Rendered layouts/_shim.html.erb (1.3ms)
+  Rendered layouts/_header.html.erb (3.5ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 190ms (Views: 187.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-07-13 11:28:07 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_shim.html.erb (1.7ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 231ms (Views: 227.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-13 15:49:45 -0400
+Started GET "/signup" for 127.0.0.1 at 2016-07-13 15:49:46 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (22.1ms)
+  Rendered users/new.html.erb within layouts/application (508.8ms)
+Started GET "/login" for 127.0.0.1 at 2016-07-13 15:49:50 -0400
+  Rendered layouts/_shim.html.erb (24.0ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (7241.1ms)
+Completed 200 OK in 6109ms (Views: 5931.6ms | ActiveRecord: 2.8ms)
+
+
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (32.8ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 8947ms (Views: 8711.0ms | ActiveRecord: 0.0ms)
+
+
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (12.2ms)
+  Rendered layouts/_footer.html.erb (8.2ms)
+Completed 200 OK in 423ms (Views: 383.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-07-13 15:50:11 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zWAHR/FhV1sCwVEnk6oW2i7psiM2W52ZWl9vcObOFEoICoe5ZDJRH3hMcuNfjUozKdac9CoHbWwh2pe/giVJSA==", "session"=>{"email"=>"theyre@great.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (8.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "theyre@great.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 379ms (ActiveRecord: 11.4ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2016-07-13 15:50:12 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (39.5ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (21.8ms)
+Completed 200 OK in 381ms (Views: 359.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2016-07-13 15:50:48 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_footer.html.erb (3.2ms)
+Completed 200 OK in 197ms (Views: 144.5ms | ActiveRecord: 2.4ms)
+
+
+  [1m[36mUser Load (18.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/users/2" for 127.0.0.1 at 2016-07-13 18:24:12 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (85.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (327.1ms)
+  Rendered layouts/_shim.html.erb (51.1ms)
+  Rendered layouts/_header.html.erb (4083.0ms)
+Completed 500 Internal Server Error in 9183ms (ActiveRecord: 85.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `logged_in?' for #<#<Class:0xb418cc48>:0xb635db10>):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb__554764534__646202008'
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___29154461__618962998'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (61.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (30.2ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (23.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (182.2ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (1.2ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (33.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (339.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (394.3ms)
+Started GET "/login" for 127.0.0.1 at 2016-07-13 18:24:35 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (482.0ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (707.0ms)
+Completed 500 Internal Server Error in 2006ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `logged_in?' for #<#<Class:0xb2f3b094>:0xb2f3a7ac>):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb__554764534__639731148'
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___29154461__646330918'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (18.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (68.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (1.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (54.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (104.6ms)
+Started GET "/signup" for 127.0.0.1 at 2016-07-13 18:24:41 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (26.6ms)
+  Rendered users/new.html.erb within layouts/application (109.5ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (218.2ms)
+Completed 500 Internal Server Error in 478ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `logged_in?' for #<#<Class:0xb418cc48>:0xb3fb931c>):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb__554764534__650103788'
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___29154461__647989718'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (111.2ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (26.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (222.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (2.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (2.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (90.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (134.3ms)
+Started GET "/signup" for 127.0.0.1 at 2016-07-13 18:30:03 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (194.3ms)
+  Rendered users/new.html.erb within layouts/application (2527.4ms)
+  Rendered layouts/_shim.html.erb (11.7ms)
+  Rendered layouts/_header.html.erb (4911.1ms)
+Completed 500 Internal Server Error in 16169ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `logged_in?' for #<#<Class:0xb440b99c>:0xb4a8ff5c>):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb__554764534__638982118'
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb___29154461__631999988'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (203.2ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (76.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (97.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (465.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (13.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (167.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (5.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (326.4ms)
+Started GET "/signup" for 127.0.0.1 at 2016-07-13 18:31:13 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.4ms)
+  Rendered users/new.html.erb within layouts/application (15.3ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (134.0ms)
+  Rendered layouts/_footer.html.erb (137.3ms)
+Completed 200 OK in 2634ms (Views: 2424.8ms | ActiveRecord: 41.2ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2016-07-13 18:31:23 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (27.8ms)
+  Rendered users/new.html.erb within layouts/application (185.5ms)
+  Rendered layouts/_shim.html.erb (3.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (27.2ms)
+  Rendered layouts/_footer.html.erb (45.4ms)
+Completed 200 OK in 1365ms (Views: 1205.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2016-07-13 18:32:49 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (19.6ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (4.8ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 876ms (Views: 850.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2016-07-13 18:35:37 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (8.8ms)
+  Rendered layouts/_footer.html.erb (6.8ms)
+Completed 200 OK in 1192ms (Views: 1087.5ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2016-07-13 21:44:40 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (29.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (291.0ms)
+  Rendered layouts/_shim.html.erb (10.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (201.0ms)
+  Rendered layouts/_footer.html.erb (27.3ms)
+Completed 200 OK in 8400ms (Views: 6145.8ms | ActiveRecord: 138.3ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2016-07-13 21:46:40 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"B9UPRO5fKDGCBmAgh3aKJe1rT8vEtjlFutff4z/5bwK+g9DB5RQIuV67/yVE5jDXBXFhEptL+RwrI9q1aMVWfg=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 159ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-13 21:46:42 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (993.9ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  [1m[36mUser Load (32.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (849.2ms)
+  Rendered layouts/_footer.html.erb (17.7ms)
+Completed 200 OK in 6501ms (Views: 6309.4ms | ActiveRecord: 33.9ms)
+
+
