@@ -26,6 +26,11 @@ class UsersEditTest < ActionDispatch::IntegrationTest
     get edit_user_path(@user)
     log_in_as(@user)
     assert_redirected_to edit_user_path(@user)
+    # now log out and log back in without trying for a specific url
+    # check that we're reditected to the user page (default) in that case
+    log_out
+    log_in_as(@user)
+    assert_redirected_to user_path(@user)
     name  = "Foo Bar"
     email = "foo@bar.com"
     patch user_path(@user), params: { user: { name:  name,

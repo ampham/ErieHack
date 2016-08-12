@@ -1,0 +1,10 @@
+<!-- A partial for rendering users in the User index -->
+<li>
+  <%= gravatar_for user, size: 50 %>
+  <%= link_to user.name, user %>
+  <!-- adds a delete link that only admins can use to delete a user from the list -->
+  <% if current_user.admin? && !current_user?(user) %>
+    | <%= link_to "delete", user, method: :delete,
+                                  data: { confirm: "You sure?" } %>
+	<% end %>
+</li>

@@ -36,14 +36,14 @@ module SessionsHelper
     !current_user.nil?
   end
 
-  # Forgets a persistent session.
+  # Forgets a persistent session. Use in log_out method -> sessions controller
   def forget(user)
     user.forget
     cookies.delete(:user_id)
     cookies.delete(:remember_token)
   end
 
-  # Logs out the current user.
+  # Logs out the current user. Use in sessions controller
   def log_out
     forget(current_user)
     session.delete(:user_id)
@@ -53,15 +53,18 @@ module SessionsHelper
   # Redirects to stored location (or to the default). This implements friendly
   # forwarding - if a user who is not logged in tries to reach a 
   # page that requires authentication, he will be redirected the page he was 
-  # trying for after he logs in. Find in Users controller
+  # trying for after he logs in. Find in sessions controller
   def redirect_back_or(default)
+    # if url is valid, evaluates true and redirects, else it's nil and evaluates default
     redirect_to(session[:forwarding_url] || default)
-    session.delete(:forwarding_url)
+    session.delete(:forwarding_url) # important else every future login would redirect there
   end
 
   # Stores the URL trying to be accessed. For a user who is not logged in trying
   # to reach a page that requires authentication. Find in Users controller
   def store_location
+    # only storing get requests prevents the user from sending through
+    # post, patch, or delete requests before being authenticated
     session[:forwarding_url] = request.original_url if request.get?
   end
 end

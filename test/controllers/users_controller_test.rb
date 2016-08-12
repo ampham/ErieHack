@@ -7,6 +7,12 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     @other_user = users(:archer)
   end
 
+  # Users index page is only accessed by logged in users
+  test "should redirect index when not logged in" do
+    get users_path
+    assert_redirected_to login_url
+  end
+
   test "should get new" do
     get signup_path
     assert_response :success
@@ -24,4 +30,35 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     assert_not flash.empty?
     assert_redirected_to login_url
   end
+
+  # a user who is not logged in and tries to delete an account will be redirected
+  # to the login page. Note the assert_no_difference block
+  test "should redirect destroy when not logged in" do
+    assert_no_difference 'User.count' do
+      delete user_path(@user)
+    end
+    assert_redirected_to login_url
+  end
+
+  # a non-admin user signed in cannot delete an account; user will be redirected 
+  # to the login page instead. Note the assert_no_difference block
+  test "should redirect destroy when logged in as a non-admin" do
+    log_in_as(@other_user)
+    assert_no_difference 'User.count' do
+      delete user_path(@user)
+    end
+    assert_redirected_to root_url
+  end
 end
+
+
+
+
+
+
+
+
+
+
+
+
