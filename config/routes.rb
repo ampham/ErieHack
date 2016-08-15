@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 	resources :users
+  # The only RESTful action we want for account_activation is edit, where the 
+  # user will click an activation link to change their 'activated' attribute 
+  # from false to true
+  resources :account_activations, only: [:edit]
 
   root 'static_pages#home'
   get  '/help',    to: 'static_pages#help'

@@ -29,12 +29,14 @@ class UsersController < ApplicationController
   end
 
   # Action for adding a new user to the database
+  # Note that we also send an activation email upon creation
   def create
     @user = User.new(user_params)
     if @user.save
-      log_in @user
-      flash[:success] = "Welcome to the Sample App!"
-      redirect_to @user
+      # The method for sending activation email has been moved to the model
+      @user.send_activation_email
+      flash[:info] = "Please check your email to activate your account."
+      redirect_to root_url
     else
       render 'new'
     end
