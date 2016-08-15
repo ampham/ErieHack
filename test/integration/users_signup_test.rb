@@ -4,6 +4,9 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
 
   def setup
     ActionMailer::Base.deliveries.clear
+    # Brought Michael into this test so we have a user to sign in and test the
+    # users index for displaying users who are not yet activated 
+    @user = users(:michael)
   end
 
   test "invalid signup information" do
@@ -50,3 +53,24 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     assert is_logged_in?
   end
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

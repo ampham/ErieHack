@@ -13,14 +13,17 @@ class UsersController < ApplicationController
 
   # Show all users
   def index
-    # Now we're using pagination. will_paginate will return users from the 
-    # database in chunks and display them on a page with links to other pages
-    @users = User.paginate(page: params[:page])
+    # Displays users on the index list only if they are activated
+    # Pagination will return users from the  database in chunks and 
+    # display them on a page with links to other pages at top & bottom
+    @users = User.where(activated: true).paginate(page: params[:page])
   end
 
   # Show a user's 'profile page'
   def show
     @user = User.find(params[:id])
+    # If the user has not been activated, redirects to the home page
+    redirect_to root_url and return unless @user.activated
   end
 
   # Form/View for a new user
