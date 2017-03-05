@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   # user will click an activation link to change their 'activated' attribute 
   # from false to true
   resources :account_activations, only: [:edit]
+  resources :locations
 
   root 'static_pages#home'
   get  '/help',    to: 'static_pages#help'
