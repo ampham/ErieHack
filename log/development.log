@@ -10544,3 +10544,520 @@ Processing by LocationsController#index as HTML
 Completed 200 OK in 87ms (Views: 84.1ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/login" for ::1 at 2017-03-05 08:29:35 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (547.0ms)
+  Rendered layouts/_shim.html.erb (1.3ms)
+  Rendered layouts/_header.html.erb (9.7ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 1004ms (Views: 990.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2017-03-05 08:29:44 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zy7X87kHtyu58hxneMqwv7CF1dsV3GmqjWvtsmN31nz3EqC25i63G6WZhacg8ORGFR4J6pj66iYhHMIMvr3YTA==", "session"=>{"email"=>"kramer@seinfeld.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kramer@seinfeld.com"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 100ms (Views: 81.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/login" for ::1 at 2017-03-05 08:29:55 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tjMQ68SEfrPCcwD3vr2qzv4hW0stuOTLhB0uRVqUX9avoHKIJ5c5LmEOMLNNPZlcm4h3w2vYdMaPUJND5HIxaw==", "session"=>{"email"=>"kramer@seinfeld.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kramer@seinfeld.com"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 86ms (Views: 82.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/login" for ::1 at 2017-03-05 08:30:05 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PAiZEDO7BUH7dy+7aYs9lrxWBzxnNBLa/sY9RXRvvdAlm/tz0KhC3FgKH/+aCw4E2f8rtCFUgtf1i4BDyonTbQ==", "session"=>{"email"=>"kramer@seinfeld.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kramer@seinfeld.com"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 78ms (Views: 75.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/signup" for ::1 at 2017-03-05 08:30:08 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.4ms)
+  Rendered users/_form.html.erb (10.6ms)
+  Rendered users/new.html.erb within layouts/application (19.4ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (3.2ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 143ms (Views: 105.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for ::1 at 2017-03-05 08:30:47 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5VLOc+veTXFSdIzFF5YCLFxo4keiA4rwWUGocMB0wC/LtftmLwW7OPRIBOQVPWPda0kalXeo8ZyoAd0T1QhOYg==", "user"=>{"name"=>"ampham", "email"=>"ampham@ampham.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "ampham@ampham.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest", "activation_digest") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "ampham"], ["email", "ampham@ampham.com"], ["created_at", 2017-03-05 13:30:48 UTC], ["updated_at", 2017-03-05 13:30:48 UTC], ["password_digest", "$2a$10$aogtmKP2f7fJlOxWnIc0l.oNJ4N7Dct5FqaSu6xxUmD/y80F7of7S"], ["activation_digest", "$2a$10$MZLk8fXrVaWi9XyQCa.XW.nHMXS9aH4S0TDoKXKy.wO0JDhigrP6."]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  Rendering user_mailer/account_activation.html.erb within layouts/mailer
+  Rendered user_mailer/account_activation.html.erb within layouts/mailer (6.5ms)
+  Rendering user_mailer/account_activation.text.erb within layouts/mailer
+  Rendered user_mailer/account_activation.text.erb within layouts/mailer (0.5ms)
+UserMailer#account_activation: processed outbound mail in 273.2ms
+Sent mail to ampham@ampham.com (43.0ms)
+Date: Sun, 05 Mar 2017 08:30:49 -0500
+From: noreply@example.com
+To: ampham@ampham.com
+Message-ID: <58bc130964067_26fa3fda15a4d61476392@Morgan-Sansburys-iMac.local.mail>
+Subject: Account activation
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_58bc13095aeb5_26fa3fda15a4d61476254";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_58bc13095aeb5_26fa3fda15a4d61476254
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi ampham,
+
+Welcome to the Sample App! Click on the link below to activate your account:
+
+https://localhost:3000/account_activations/38UhDbPca0TL9NBb_hTQDA/edit?email=ampham%40ampham.com
+
+----==_mimepart_58bc13095aeb5_26fa3fda15a4d61476254
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <!-- Mailers can be previewed in test/mailers/previews -->
+<h1>Sample App</h1>
+
+<!-- As with any view, we can user ERB with instance variables we've defined.
+Here, the instance variable @user is defined in the user_mailer mailer -->
+<p>Hi ampham,</p>
+
+<p>
+Welcome to the Sample App! Click on the link below to activate your account:
+</p>
+
+<!-- The following code corresponds to the edit path of the account_activations
+resource. In the same way that edit_user_url(user) will produce the URL 
+
+http://www.example.com/users/1/edit 
+
+this account activation link will produce the URL
+
+http://www.example.com/account_activations/q5lt38hQDc_959PVoo6b7A/edit?email=foo%40example.com
+
+where the random string is the activation token (a URL-safe base64 string 
+generated by the new_token method in the user model) and the email address of 
+the user is the key-value pair following the ? sign in the URL, in this case
+'email: foo@example.com' - this is called a QUERY PARAMETER -->
+<a href="https://localhost:3000/account_activations/38UhDbPca0TL9NBb_hTQDA/edit?email=ampham%40ampham.com">Activate</a>
+  </body>
+</html>
+
+----==_mimepart_58bc13095aeb5_26fa3fda15a4d61476254--
+
+Redirected to http://localhost:3001/
+Completed 302 Found in 1234ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/" for ::1 at 2017-03-05 08:30:49 -0500
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (265.8ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (7.8ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 392ms (Views: 387.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-05 08:32:45 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (285.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (8.5ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 429ms (Views: 410.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/account_activations/38UhDbPca0TL9NBb_hTQDA/edit?email=ampham%40ampham.com" for ::1 at 2017-03-05 08:32:55 -0500
+Processing by AccountActivationsController#edit as HTML
+  Parameters: {"email"=>"ampham@ampham.com", "id"=>"38UhDbPca0TL9NBb_hTQDA"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ampham@ampham.com"], ["LIMIT", 1]]
+  [1m[35mSQL (2.3ms)[0m  [1m[33mUPDATE "users" SET "activated" = 't', "activated_at" = '2017-03-05 13:32:55.316903' WHERE "users"."id" = ?[0m  [["id", 104]]
+Redirected to http://localhost:3001/users/104
+Completed 302 Found in 104ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/users/104" for ::1 at 2017-03-05 08:32:55 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"104"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.2ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 71ms (Views: 66.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/104" for ::1 at 2017-03-05 08:34:23 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"104"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (5.7ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 433ms (Views: 393.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/104" for ::1 at 2017-03-05 08:35:30 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"104"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 114ms (Views: 109.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/locations" for ::1 at 2017-03-05 08:35:33 -0500
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  Rendered locations/index.html.erb within layouts/application (11.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 106ms (Views: 99.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/locations/new" for ::1 at 2017-03-05 08:35:35 -0500
+Processing by LocationsController#new as HTML
+  Rendering locations/new.html.erb within layouts/application
+  Rendered locations/new.html.erb within layouts/application (515.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (6.0ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 588ms (Views: 583.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/locations" for ::1 at 2017-03-05 08:35:44 -0500
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fVzfF11fkEQcJFdTGG27n6oa2ny570eFOJf8a4EThTF++UvTzaWbhvncaD9mBhMDE/e3DgF8XDGwYZaFrW971g==", "location"=>{"title"=>"no", "description"=>"yes"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering locations/new.html.erb within layouts/application
+  Rendered locations/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.4ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 74ms (Views: 69.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/locations" for ::1 at 2017-03-05 08:38:04 -0500
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  Rendered locations/index.html.erb within layouts/application (8.9ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 103ms (Views: 96.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/locations/new" for ::1 at 2017-03-05 08:38:07 -0500
+Processing by LocationsController#new as HTML
+  Rendering locations/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (7.2ms)
+  Rendered locations/new.html.erb within layouts/application (11.4ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <% if @user.errors.any? %>
+    2:   <div id="error_explanation">
+    3:     <div class="alert alert-danger">
+    4:       The form contains <%= pluralize(@user.errors.count, "error") %>.
+  
+app/views/shared/_error_messages.html.erb:1:in `_app_views_shared__error_messages_html_erb___718417507996668288_70164053597880'
+app/views/locations/new.html.erb:2:in `block in _app_views_locations_new_html_erb__959654670902847236_70164074873340'
+app/views/locations/new.html.erb:1:in `_app_views_locations_new_html_erb__959654670902847236_70164074873340'
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.3ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (78.6ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from call at /Users/morgansansbury/.rvm/gems/ruby-2.3.0@global/gems/rack-2.0.1/lib/rack/method_override.rb:22)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (534.8ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (602.6ms)
+Started GET "/locations/new" for ::1 at 2017-03-05 08:38:19 -0500
+Processing by LocationsController#new as HTML
+  Rendering locations/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (3.5ms)
+  Rendered locations/new.html.erb within layouts/application (6.2ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <% if @user.errors.any? %>
+    2:   <div id="error_explanation">
+    3:     <div class="alert alert-danger">
+    4:       The form contains <%= pluralize(@user.errors.count, "error") %>.
+  
+app/views/shared/_error_messages.html.erb:1:in `_app_views_shared__error_messages_html_erb___718417507996668288_70164088016460'
+app/views/locations/new.html.erb:2:in `block in _app_views_locations_new_html_erb__959654670902847236_70164077317700'
+app/views/locations/new.html.erb:1:in `_app_views_locations_new_html_erb__959654670902847236_70164077317700'
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.5ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (84.7ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from call at /Users/morgansansbury/.rvm/gems/ruby-2.3.0@global/gems/rack-2.0.1/lib/rack/method_override.rb:22)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (71.7ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (134.5ms)
+Started GET "/locations/new" for ::1 at 2017-03-05 08:38:40 -0500
+Processing by LocationsController#new as HTML
+  Rendering locations/new.html.erb within layouts/application
+  Rendered locations/new.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 68ms (Views: 63.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/locations/new" for ::1 at 2017-03-05 08:39:40 -0500
+Processing by LocationsController#new as HTML
+  Rendering locations/new.html.erb within layouts/application
+  Rendered locations/new.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.3ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 74ms (Views: 69.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/locations/new" for ::1 at 2017-03-05 08:39:56 -0500
+Processing by LocationsController#new as HTML
+  Rendering locations/new.html.erb within layouts/application
+  Rendered locations/new.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 68ms (Views: 65.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/locations/new" for ::1 at 2017-03-05 08:40:04 -0500
+Processing by LocationsController#new as HTML
+  Rendering locations/new.html.erb within layouts/application
+  Rendered locations/new.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 66ms (Views: 62.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/locations/new" for ::1 at 2017-03-05 08:40:16 -0500
+Processing by LocationsController#new as HTML
+  Rendering locations/new.html.erb within layouts/application
+  Rendered locations/new.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.6ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 76ms (Views: 73.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/locations/new" for ::1 at 2017-03-05 08:40:23 -0500
+Processing by LocationsController#new as HTML
+  Rendering locations/new.html.erb within layouts/application
+  Rendered locations/new.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.3ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 89ms (Views: 84.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/locations" for ::1 at 2017-03-05 08:41:08 -0500
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"neohK2bptvYRjOmaZJJLflUc5TR9fYE3MZ5QNO16YFiEeUNIhfrxa7Lx2d6XEnjsMLXJvDsdETo60+0yU5wO5Q==", "location"=>{"title"=>"", "description"=>""}, "commit"=>"Save"}
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering locations/new.html.erb within layouts/application
+  Rendered locations/new.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 86ms (Views: 77.5ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/locations" for ::1 at 2017-03-05 08:41:09 -0500
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pD3xFs9Bkzywsf7c8GE2XLmWpWGH7fCwYSafslkt1JS9rpN1LFLUoRPMzpgD4QXO3D+J6cGNYL1qayK058u6KQ==", "location"=>{"title"=>"", "description"=>""}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering locations/new.html.erb within layouts/application
+  Rendered locations/new.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 80ms (Views: 72.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/locations" for ::1 at 2017-03-05 08:43:12 -0500
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  Rendered locations/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 64ms (Views: 60.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/locations/new" for ::1 at 2017-03-05 08:43:14 -0500
+Processing by LocationsController#new as HTML
+  Rendering locations/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (4.1ms)
+  Rendered locations/new.html.erb within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <% if @user.errors.any? %>
+    2:   <div id="error_explanation">
+    3:     <div class="alert alert-danger">
+    4:       The form contains <%= pluralize(@user.errors.count, "error") %>.
+  
+app/views/shared/_error_messages.html.erb:1:in `_app_views_shared__error_messages_html_erb___718417507996668288_70164096645380'
+app/views/locations/new.html.erb:2:in `block in _app_views_locations_new_html_erb__959654670902847236_70164096609700'
+app/views/locations/new.html.erb:1:in `_app_views_locations_new_html_erb__959654670902847236_70164096609700'
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.1ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (76.5ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from call at /Users/morgansansbury/.rvm/gems/ruby-2.3.0@global/gems/rack-2.0.1/lib/rack/method_override.rb:22)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (64.9ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (123.2ms)
+Started GET "/locations/new" for ::1 at 2017-03-05 08:43:25 -0500
+Processing by LocationsController#new as HTML
+  Rendering locations/new.html.erb within layouts/application
+  Rendered shared/_location_error_messages.html.erb (0.6ms)
+  Rendered locations/new.html.erb within layouts/application (16.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 101ms (Views: 97.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/locations" for ::1 at 2017-03-05 08:43:27 -0500
+Processing by LocationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iw+8AmBypJf4ARdU6dYrXhCpTs+Jp65adsJ6RUk22cKSnN5hg2HjClt8JxAaVhjMdQBiR8/HPld9j8dD99C3fw==", "location"=>{"title"=>"", "description"=>""}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering locations/new.html.erb within layouts/application
+  Rendered shared/_location_error_messages.html.erb (2.6ms)
+  Rendered locations/new.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 90ms (Views: 83.1ms | ActiveRecord: 0.3ms)
+
+
