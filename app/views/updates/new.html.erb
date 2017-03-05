@@ -1,0 +1,21 @@
+<%= form_for @update do |update| %>
+	<div class="form-group">
+		<%= update.label :lead, class:'control-label' %>
+		<%= update.text_field :lead, class: 'form-control' %>
+	</div>
+
+	<div class="form-group">
+		<%= update.label :mercury, class:'control-label' %>
+		<%= update.text_field :mercury, class: 'form-control' %>
+	</div>
+
+	<div class="form-group">
+		<%= update.label :plutonium, class:'control-label' %>
+		<%= update.text_field :plutonium, class: 'form-control' %>
+	</div>
+
+	<%= update.label :location %>
+	<%= update.select :location_id, @locations_list %> 
+
+	<%= update.submit 'Save', class: 'btn btn-primary' %>
+<% end %>

@@ -17,7 +17,7 @@ class LocationsController < ApplicationController
 		@location = Location.new(allowed_params)
 
 		if @location.save
-			flash[:success] = "Created new post"
+			flash[:success] = "Created new location"
 			redirect_to @location
 		else
 			render 'new'
