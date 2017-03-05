@@ -1,4 +1,14 @@
 <h1><%= @location.title %></h1>
 <p><%= @location.description %></p>
 
+<ul>
+	<% @updates.each do |up| %>
+		<h4>Update for: <%= up.created_at %></h4>
+		<p>Lead: <%= up.lead %> mcg</p>
+		<p>Mercury: <%= up.mercury %> mcg</p>
+		<p>Plutonium: <%= up.plutonium %> mcg</p>
+		<br>
+	<% end %>
+</ul>
+
 <%= link_to "All Locations", locations_path %>
