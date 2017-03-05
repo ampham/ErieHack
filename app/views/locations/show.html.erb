@@ -3,7 +3,7 @@
 
 <ul>
 	<% @updates.each do |up| %>
-		<h4>Update for: <%= up.created_at %></h4>
+		<h4>Update for: <%= link_to up.created_at, update_path(up.id) %></h4>
 		<p>Lead: <%= up.lead %> mcg</p>
 		<p>Mercury: <%= up.mercury %> mcg</p>
 		<p>Plutonium: <%= up.plutonium %> mcg</p>
