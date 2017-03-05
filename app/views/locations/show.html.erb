@@ -1,6 +1,11 @@
 <h1><%= @location.title %></h1>
 <h2><%= @location.description %></h2>
 
+<% if logged_in? %>
+	<h4><%= link_to "Add new update", new_update_path %></h4>
+	<br>
+<% end %>
+
 <ul>
 	<% @updates.each do |up| %>
 		<h4>Update for: <%= link_to up.created_at, update_path(up.id) %></h4>
@@ -11,4 +16,4 @@
 	<% end %>
 </ul>
 
-<%= link_to "All Locations", locations_path %>
+<h4><%= link_to "Back to Locations", locations_path %></h4>

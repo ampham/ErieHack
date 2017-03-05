@@ -2,3 +2,6 @@
 <p>Lead: <%= @update.lead %> mcg</p>
 <p>Mercury: <%= @update.mercury %> mcg</p>
 <p>Plutonium: <%= @update.plutonium %> mcg</p>
+
+<br>
+<h4><%= link_to "Back to updates list", location_path(@update.location_id) %></h4>
