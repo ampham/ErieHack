@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  lead: 1.5
+  mercury: 1.5
+  plutonium: 1.5
+
+two:
+  lead: 1.5
+  mercury: 1.5
+  plutonium: 1.5
