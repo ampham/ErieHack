@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   # from false to true
   resources :account_activations, only: [:edit]
   resources :locations
+  resources :updates
 
   root 'static_pages#home'
   get  '/help',    to: 'static_pages#help'
