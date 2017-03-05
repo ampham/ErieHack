@@ -1,7 +1,9 @@
 <h1>This is a list of locations</h1>
 <h2>Select one to see its status</h2>
 
-<%= link_to 'Add Location', new_location_path %>
+<% if logged_in? %>
+	<%= link_to 'Add Location', new_location_path %>
+<% end %>
 
 <ul>
 	<% @locations.each do |loc| %>
