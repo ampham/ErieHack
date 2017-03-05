@@ -1,1 +1,10 @@
-<h1>This will be a list of locations</h1>
+<h1>This is a list of locations</h1>
+<h2>Select one to see its status</h2>
+
+<ul>
+	<% @locations.each do |loc| %>
+		<h4><%= link_to loc.title, location_path(loc.id) %></h4>
+		<p><%= loc.description %></p>
+		<br>
+	<% end %>
+</ul>
