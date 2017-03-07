@@ -1,33 +1,11 @@
 # Buffalo Niagara Riverkeeper Datacenter
 
 This is a project for the Buffalo
-[*Erie Hack*](http://http://http://eriehack.io/) competition.
+[*Erie Hack*](http://http://http://eriehack.io/) competition in cooperation with
+[*Buffalo Niagara Riverkeeper*](http://bnriverkeeper.org/).
 
-## Getting started
+The goal is to create a web application and API to allow residents of Western New York
+to access Riverkeeper's data in real time via this website and through text messages 
+by implementing [*Plivo*](https://www.plivo.com/), an SMS-to-REST API service.
 
-To get started with the app, clone the repo and then install the needed gems:
-
-```
-$ bundle install --without production
-```
-
-Next, migrate the database:
-
-```
-$ rails db:migrate
-```
-
-Finally, run the test suite to verify that everything is working correctly:
-
-```
-$ rails test
-```
-
-If the test suite passes, you'll be ready to run the app in a local server:
-
-```
-$ rails server
-```
-
-For more information, see the
-[*Ruby on Rails Tutorial* book](http://www.railstutorial.org/book).
+Visit [*The Riverkeeper Datacenter*](https://sheltered-everglades-96411.herokuapp.com/) on Heroku!
