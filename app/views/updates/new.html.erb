@@ -15,7 +15,8 @@
 	</div>
 
 	<%= update.label :location %>
-	<%= update.select :location_id, @locations_list %> 
+	<% # displays Location name as text, while mapping the title to its ID for submission %>
+	<%= select( "update", "location_id", Location.all.collect { |loc| [loc.title, loc.id] }) %> 
 
 	<%= update.submit 'Save', class: 'btn btn-primary' %>
 <% end %>
