@@ -1,9 +1,7 @@
 # Buffalo Niagara Riverkeeper Datacenter
 
 This is a project for the Buffalo
-[*Erie Hack
-competition*](http://www.railstutorial.org/)
-by [Michael Hartl](http://http://eriehack.io//).
+[*Erie Hack*](http://http://http://eriehack.io/).
 
 ## Getting started
 
