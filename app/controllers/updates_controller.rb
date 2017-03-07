@@ -3,15 +3,9 @@ class UpdatesController < ApplicationController
 	def new
 		@update = Update.new
 		#@update.user_id = current_user.id
-
-		# make locations IDs available to select in the form
-		@locations_list = Update.get_locations
 	end
 
 	def create
-		# same as in new
-		@locations_list = Update.get_locations
-
 		@user = current_user
 		@update = Update.new(allowed_params)
 		@update.user_id = current_user.id
