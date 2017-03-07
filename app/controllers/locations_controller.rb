@@ -7,6 +7,7 @@ class LocationsController < ApplicationController
 	def show
 		@location = Location.find(params[:id])
 		@updates = @location.updates.all.order('created_at DESC')
+		#@user = User.find_by_id(@)
 	end
 
 	def new 

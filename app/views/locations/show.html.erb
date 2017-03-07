@@ -9,6 +9,9 @@
 <ul>
 	<% @updates.each do |up| %>
 		<h4>Update for: <%= link_to up.created_at, update_path(up.id) %></h4>
+		<% #This is ugly, but all it does is grab the User associated with each update %>
+		<p>Added by: <%= link_to up.my_user(up.user_id).name, 
+			user_path(up.my_user(up.user_id).id) %></p>
 		<p>Lead: <%= up.lead %> mcg</p>
 		<p>Mercury: <%= up.mercury %> mcg</p>
 		<p>Plutonium: <%= up.plutonium %> mcg</p>
