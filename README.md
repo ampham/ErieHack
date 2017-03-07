@@ -1,9 +1,9 @@
-# Ruby on Rails Tutorial sample application
+# Buffalo Niagara Riverkeeper Datacenter
 
-This is the sample application for
-[*Ruby on Rails Tutorial:
-Learn Web Development with Rails*](http://www.railstutorial.org/)
-by [Michael Hartl](http://www.michaelhartl.com/).
+This is a project for the Buffalo
+[*Erie Hack
+competition*](http://www.railstutorial.org/)
+by [Michael Hartl](http://http://eriehack.io//).
 
 ## Getting started
 
