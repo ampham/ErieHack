@@ -6,17 +6,32 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-User.create!(name:  "Example User",
-             email: "example@railstutorial.org",
-             password:              "foobar",
-             password_confirmation: "foobar",
-             admin:     true,
-             activated: true,
-             activated_at: Time.zone.now)
+# generates a random float for an Update's values
+def random_range
+  rand * (9) + 1
+end
 
-99.times do |n|
+i = 0
+20.times do |p|
+  lead = random_range
+  mercury = random_range
+  plutonium = random_range
+  location = rand(3..4)
+  user = rand(2)
+  Update.create(id: i
+    lead: lead,
+    mercury: mercury,
+    plutonium: plutonium,
+    location_id: location,
+    user_id: user
+    )
+  i += 1 
+end
+
+=begin
+20.times do |n|
   name  = Faker::Name.name
-  email = "example-#{n+1}@railstutorial.org"
+  email = "example-#{n+1}@riverkeeper.com"
   password = "password"
   User.create!(name:  name,
               email: email,
@@ -25,3 +40,4 @@ User.create!(name:  "Example User",
               activated: true,
               activated_at: Time.zone.now)
 end
+=end
