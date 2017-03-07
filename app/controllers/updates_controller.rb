@@ -5,19 +5,12 @@ class UpdatesController < ApplicationController
 		#@update.user_id = current_user.id
 
 		# make locations IDs available to select in the form
-		locations = Location.select(:id).distinct
-		@locations_list = []
-		locations.each do |loc|
-			@locations_list << loc.id
-		end
+		@locations_list = Update.get_locations
 	end
 
 	def create
-		locations = Location.select(:id).distinct
-		@locations_list = []
-		locations.each do |loc|
-			@locations_list << loc.id
-		end
+		# same as in new
+		@locations_list = Update.get_locations
 
 		@user = current_user
 		@update = Update.new(allowed_params)
