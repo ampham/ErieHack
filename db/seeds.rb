@@ -11,21 +11,18 @@ def random_range
   rand * (9) + 1
 end
 
-i = 0
 20.times do |p|
   lead = random_range
   mercury = random_range
   plutonium = random_range
-  location = rand(3..4)
+  location = rand(1..2)
   user = rand(2)
-  Update.create(id: i
-    lead: lead,
+  Update.create(lead: lead,
     mercury: mercury,
     plutonium: plutonium,
     location_id: location,
     user_id: user
     )
-  i += 1 
 end
 
 =begin
