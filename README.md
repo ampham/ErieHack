@@ -1,7 +1,7 @@
 # Buffalo Niagara Riverkeeper Datacenter
 
 This is a project for the Buffalo
-[*Erie Hack*](http://http://http://eriehack.io/) competition in cooperation with
+[*Erie Hack*](http://eriehack.io/) competition in cooperation with
 [*Buffalo Niagara Riverkeeper*](http://bnriverkeeper.org/).
 
 The goal is to create a web application and API to allow residents of Western New York
