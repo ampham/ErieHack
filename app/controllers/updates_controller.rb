@@ -12,6 +12,7 @@ class UpdatesController < ApplicationController
 	end
 
 	def create
+		@user = current_user
 		@update = Update.new(allowed_params)
 
 		if @update.save

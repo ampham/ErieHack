@@ -8,6 +8,8 @@ class User < ApplicationRecord
   # This way, no matter what users type in, our records are consistently all lowercase
 	before_save :downcase_email
 
+  has_many :updates
+
   # Some rules for what a password should be like
   validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
   has_secure_password
