@@ -1,7 +1,7 @@
 # Buffalo Niagara Riverkeeper Datacenter
 
 This is a project for the Buffalo
-[*Erie Hack*](http://http://http://eriehack.io/).
+[*Erie Hack*](http://http://http://eriehack.io/) competition.
 
 ## Getting started
 
