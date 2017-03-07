@@ -12554,3 +12554,14 @@ Processing by StaticPagesController#contact as HTML
 Completed 200 OK in 84ms (Views: 80.5ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/" for ::1 at 2017-03-05 13:59:00 -0500
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (13.8ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 212ms (Views: 208.8ms | ActiveRecord: 0.1ms)
+
+
