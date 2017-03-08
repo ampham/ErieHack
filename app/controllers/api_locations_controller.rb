@@ -4,4 +4,10 @@ class ApiLocationsController < ApplicationController
 		render json: Location.all
 	end
 
+	def show
+		location = Location.find(params[:id])
+		updates = location.updates.to_json
+		render :json => location, :include => :updates
+	end
+
 end
