@@ -11,10 +11,10 @@
 		<h4>Update for: <%= link_to stat.created_at, status_path(stat.id) %></h4>
 		<% #This is ugly, but all it does is grab the User associated with an update %>
 		<% # TODO: Rewrite my_user method for Statuses! %>
-		<p>Conductivity: <%= stat.conductivity %> mcg</p>
-		<p>Dissolved Oxygen: <%= stat.o2 %> mcg</p>
-		<p>pH: <%= stat.pH %> mcg</p>
-		<p>Turbidity: <%= stat.turbidity %> </p>
+		<p>Conductivity: <%= stat.conductivity %>%</p>
+		<p>Dissolved Oxygen: <%= stat.o2 %>%</p>
+		<p>pH: <%= stat.pH %>%</p>
+		<p>Turbidity: <%= stat.turbidity %>%</p>
 		<br>
 	<% end %>
 </ul>
