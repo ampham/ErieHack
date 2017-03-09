@@ -25,9 +25,6 @@ Rails.application.routes.draw do
       scope '/locations' do
         get '/' => 'api_locations#index'
         get '/:id' => 'api_locations#show'
-        scope '/updates' do
-          get'/' => 'updates_controller#index'
-        end
       end
     end
   end
