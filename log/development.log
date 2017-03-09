@@ -18894,3 +18894,15 @@ Processing by StatusesController#new as HTML
 Completed 200 OK in 168ms (Views: 122.6ms | ActiveRecord: 2.1ms)
 
 
+Started GET "/statuses/new" for ::1 at 2017-03-09 16:46:06 -0500
+Processing by StatusesController#new as HTML
+  Rendering statuses/new.html.erb within layouts/application
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  Rendered statuses/new.html.erb within layouts/application (26.7ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (29.1ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 406ms (Views: 365.8ms | ActiveRecord: 3.3ms)
+
+

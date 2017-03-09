@@ -1,32 +1,40 @@
-<%= form_for @status do |status| %>
-	<div class="form-group">
-		<%= status.label :o2, class: 'control-label' %>
-		<%= status.text_field :o2, class: 'form-control'	%>
-	</div>
+<% if logged_in? %>
 
-	<div class="form-group">
-		<%= status.label :conductivity, class: 'control-label' %>
-		<%= status.text_field :conductivity, class: 'form-control'	%>
-	</div>
+	<%= form_for @status do |status| %>
+		<div class="form-group">
+			<%= status.label :o2, class: 'control-label' %>
+			<%= status.text_field :o2, class: 'form-control'	%>
+		</div>
 
-	<div class="form-group">
-		<%= status.label :pH, class: 'control-label' %>
-		<%= status.text_field :pH, class: 'form-control'	%>
-	</div>
+		<div class="form-group">
+			<%= status.label :conductivity, class: 'control-label' %>
+			<%= status.text_field :conductivity, class: 'form-control'	%>
+		</div>
 
-	<div class="form-group">
-		<%= status.label :turbidity, class: 'control-label' %>
-		<%= status.text_field :turbidity, class: 'form-control'	%>
-	</div>
+		<div class="form-group">
+			<%= status.label :pH, class: 'control-label' %>
+			<%= status.text_field :pH, class: 'form-control'	%>
+		</div>
 
-	<div class="form-group">
-		<%= status.label :temp, class: 'control-label' %>
-		<%= status.text_field :temp, class: 'form-control'	%>
-	</div>
+		<div class="form-group">
+			<%= status.label :turbidity, class: 'control-label' %>
+			<%= status.text_field :turbidity, class: 'form-control'	%>
+		</div>
 
-	<%= status.label :location %>
-	<% # displays Location name as text, while mapping the title to its ID for submission %>
-	<%= select( "status", "location_id", Location.all.collect { |loc| [loc.title, loc.id] }) %> 
+		<div class="form-group">
+			<%= status.label :temp, class: 'control-label' %>
+			<%= status.text_field :temp, class: 'form-control'	%>
+		</div>
 
-	<%= status.submit 'Save', class: 'btn btn-primary' %>
+		<%= status.label :location %>
+		<% # displays Location name as text, while mapping the title to its ID for submission %>
+		<%= select( "status", "location_id", Location.all.collect { |loc| [loc.title, loc.id] }) %> 
+
+		<%= status.submit 'Save', class: 'btn btn-primary' %>
+	<% end %>
+
+<% else %>
+	
+	<h1>Nope</h1>
+
 <% end %>
