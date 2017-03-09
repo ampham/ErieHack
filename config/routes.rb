@@ -29,5 +29,5 @@ Rails.application.routes.draw do
     end
   end
 
-  post '/sms', to: 'text_messages#send_text'
+  get '/sms', to: 'text_messages#send_text'
 end
