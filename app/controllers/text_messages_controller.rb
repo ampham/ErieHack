@@ -1,6 +1,6 @@
 class TextMessagesController < ApplicationController
 
-	def send_text do
+	def send_text
     number_to_send_to = params[:number_to_send_to]
 
     twilio_sid = "PN43a9a5f3c5a4803bac1c6de8f206e6df"
