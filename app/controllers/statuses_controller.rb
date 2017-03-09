@@ -7,7 +7,7 @@ class StatusesController < ApplicationController
 	def create
 		@user = current_user
 		@status = Status.new(allowed_params)
-		@status.user_id
+		@status.user_id = current_user.id
 
 		if @status.save
 			flash[:success] = "Created new status"
@@ -24,7 +24,7 @@ class StatusesController < ApplicationController
 	private
 
 		def allowed_params
-			params.require(:update).permit(:o2, :conductivity, :pH, :turbidity, :temp, :user_id, :location_id)
+			params.require(:status).permit(:o2, :conductivity, :pH, :turbidity, :temp, :user_id, :location_id)
 		end
 
 end

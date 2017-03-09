@@ -1,0 +1,9 @@
+<h3>Update for: <%= @status.created_at %></h3>
+<p>By: <%= @status.user.name %></p>
+<p>Dissolved Oxygen: <%= @status.o2 %> mcg</p>
+<p>Conductivity: <%= @status.conductivity %> mcg</p>
+<p>pH: <%= @status.pH %> mcg</p>
+<p>Turbidity: <%= @status.turbidity %> mcg</p>
+<p>Temperature: <%= @status.temp %> mcg</p>
+
+<h4><%= link_to "Back to updates list", location_path(@status.location_id) %></h4>
