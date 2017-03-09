@@ -7,7 +7,7 @@ class TextMessagesController < ApplicationController
 			r.message = 'Hey this is a message from the internet'
 		end
 
-		response.to_xml
+		render :xml => response.to_xml
 	end
 
 end
