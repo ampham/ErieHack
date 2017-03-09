@@ -11,6 +11,20 @@ def random_range
   rand * (9) + 1
 end
 
+seed_locations = ["Ransom Creek", "Tonawanda Creek", "Buffalo Creek", "Cazenovia Creek",
+"Buffalo River", "Erie Basin & Black Rock Canal", "Scajaquada Creek", "Ellicott Creek",
+"Cayuga Creek (Erie County)", "Tonawanda Creek (Lower Main Stem)", "Cayuga & Bergholtz Creek (Niagara Falls)", 
+"Gill Creek"]
+
+the_description = "A location"
+
+for location in seed_locations
+  Location.create(title: location, 
+    description: the_description
+    )
+end
+
+=begin
 20.times do |p|
   lead = random_range
   mercury = random_range
@@ -24,6 +38,7 @@ end
     user_id: user
     )
 end
+=end
 
 =begin
 20.times do |n|
