@@ -28,4 +28,6 @@ Rails.application.routes.draw do
       end
     end
   end
+
+  get '/sms', to: 'text_messages#send_text'
 end
