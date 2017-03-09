@@ -4,7 +4,7 @@ class TextMessagesController < ApplicationController
 		#content_type 'text/xml'
 
 		response = Twilio::TwiML::Response.new do |r|
-			r.message = 'Hey this is a message from the internet'
+			r.Sms = 'Hey this is a message from Riverkeeper Datacenter'
 		end
 
 		render :xml => response.to_xml
