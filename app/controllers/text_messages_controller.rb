@@ -13,6 +13,8 @@ class TextMessagesController < ApplicationController
 				values << keyval[1]
 			end
 
+			Update.create_from_text(values[0].to_f, values[1].to_f, values[2].to_f)
+
 			response = Twilio::TwiML::Response.new do |r|
 				r.Sms "You would like to post #{values[0]} lead, #{values[1]} mercury and #{values[2]} plutonium."
 			end
