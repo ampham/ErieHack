@@ -3,6 +3,7 @@ class Location < ApplicationRecord
 	validates :description,	presence: true, length: { minimum: 4, maximum: 110 }
 
 	has_many :updates, dependent: :destroy
+	has_many :statuses, dependent: :destroy
 
 	
 end

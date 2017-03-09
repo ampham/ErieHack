@@ -2,19 +2,19 @@
 <h2><%= @location.description %></h2>
 
 <% if logged_in? %>
-	<h4><%= link_to "Add new update", new_update_path %></h4>
+	<h4><%= link_to "Add new status", new_status_path %></h4>
 	<br>
 <% end %>
 
 <ul>
-	<% @updates.each do |up| %>
-		<h4>Update for: <%= link_to up.created_at, update_path(up.id) %></h4>
+	<% @statuses.each do |stat| %>
+		<h4>Update for: <%= link_to stat.created_at, status_path(stat.id) %></h4>
 		<% #This is ugly, but all it does is grab the User associated with an update %>
-		<p>Added by: <%= link_to up.my_user(up.user_id).name, 
-			user_path(up.my_user(up.user_id).id) %></p>
-		<p>Lead: <%= up.lead %> mcg</p>
-		<p>Mercury: <%= up.mercury %> mcg</p>
-		<p>Plutonium: <%= up.plutonium %> mcg</p>
+		<% # TODO: Rewrite my_user method for Statuses! %>
+		<p>Conductivity: <%= stat.conductivity %> mcg</p>
+		<p>Dissolved Oxygen: <%= stat.o2 %> mcg</p>
+		<p>pH: <%= stat.pH %> mcg</p>
+		<p>Turbidity: <%= stat.turbidity %> </p>
 		<br>
 	<% end %>
 </ul>
