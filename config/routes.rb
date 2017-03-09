@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :account_activations, only: [:edit]
   resources :locations
   resources :updates
+  resources :statuses
 
   root 'static_pages#home'
   get  '/help',    to: 'static_pages#help'
