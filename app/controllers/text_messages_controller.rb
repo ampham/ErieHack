@@ -15,7 +15,7 @@ class TextMessagesController < ApplicationController
 
 			response = Twilio::TwiML::Response.new do |r|
 				r.Sms "You would like to post #{values[0]} lead, #{values[1]} mercury and #{values[2]} plutonium."
-			render :xml => response.to_xml
+			render :xml => response
 			end
 		end
 
