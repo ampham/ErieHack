@@ -28,3 +28,6 @@ class StatusesController < ApplicationController
 		end
 
 end
+'''
+
+'''
