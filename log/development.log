@@ -17500,3 +17500,147 @@ Processing by ApiLocationsController#index as HTML
 Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/" for ::1 at 2017-03-09 09:54:32 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2776.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (5.5ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 4909ms (Views: 4888.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2017-03-09 09:54:38 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.1.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.1.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.1.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.1.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered collection of /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [37 times] (17.4ms)
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (36.8ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (165.6ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (619.7ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (691.2ms)
+Started GET "/locations" for ::1 at 2017-03-09 09:54:39 -0500
+Processing by LocationsController#index as HTML
+Started GET "/favicon.ico" for ::1 at 2017-03-09 09:54:39 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.1.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.1.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.1.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.1.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.4.0) lib/puma/configuration.rb:224:in `call'
+puma (3.4.0) lib/puma/server.rb:569:in `handle_request'
+puma (3.4.0) lib/puma/server.rb:406:in `process_client'
+puma (3.4.0) lib/puma/server.rb:271:in `block in run'
+puma (3.4.0) lib/puma/thread_pool.rb:114:in `block in spawn_thread'
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (14.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  Rendered locations/index.html.erb within layouts/application (27.3ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 172ms (Views: 109.1ms | ActiveRecord: 15.4ms)
+
+
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered collection of /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb [37 times] (11.3ms)
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (131.6ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (73.4ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (136.4ms)
+Started GET "/help" for ::1 at 2017-03-09 09:54:39 -0500
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 100ms (Views: 82.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-03-09 09:54:40 -0500
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 100ms (Views: 97.1ms | ActiveRecord: 0.0ms)
+
+
