@@ -6,7 +6,7 @@ class Update < ApplicationRecord
 	def self.create_from_text(lead, merc, plut)
 		Update.create(lead: lead,
 			mercury: merc,
-			plutoinum: plut,
+			plutonium: plut,
 			location_id: 1,
 			user_id: 1
 			)
