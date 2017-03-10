@@ -8,11 +8,20 @@ class TextMessagesController < ApplicationController
 			# If the message starts with "GET" then we're returning a Location's status
 			substrings = received_message.split
 			location_id = substrings[1].to_i
+			# the parameters we'll be texting back
 			location_name = Location.find_by(id: location_id).title
+			conductivity = Location.find_by(id: location_id).statuses.last.conductivity
+			o2 = Location.find_by(id: location_id).statuses.last.o2
+			ph = Location.find_by(id: location_id).statuses.last.pH
+			turbidity = Location.find_by(id: location_id).statuses.last.turbidity
 
+			# Build the response object to send
 			response = Twilio::TwiML::Response.new do |r|
 				r.Sms "You have asked for data on #{location_name}." +
-				"\n\n\n And something on a new line."
+				"\n\n Conductivity: #{conductivity}" +
+				"\n Dissolved O2: #{o2}" +
+				"\n pH: #{ph}" +
+				"\n Turbidity: #{turbidity}"
 			end
 		# If the message starts with "POST" then we're saving a new update (DEPRECATED!)
 		elsif received_message.start_with?("POST")
