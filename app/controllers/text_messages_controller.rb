@@ -12,7 +12,7 @@ class TextMessagesController < ApplicationController
 
 			response = Twilio::TwiML::Response.new do |r|
 				r.Sms "You have asked for data on #{location_name}." +
-				"\n And something on a new line."
+				r.Sms "And something on a new line."
 			end
 		# If the message starts with "POST" then we're saving a new update (DEPRECATED!)
 		elsif received_message.start_with?("POST")
