@@ -1,11 +1,20 @@
 class TextMessagesController < ApplicationController
 	skip_before_action :verify_authenticity_token
 
-	# TODO: Move a lot of this into the Update model
+	# TODO: Move a lot of this into the models
 	def send_text
 		received_message = params["Body"]
-		# If the message starts with "POST" then we're saving a new update
-		if received_message.start_with?("POST")
+		if received_message.start_with?("GET")
+			# If the message starts with "GET" then we're returning a Location's status
+			substrings = received_message.split
+			location_id = substrings[1].to_i
+			location_name = Location.find_by(id: location_id).title
+
+			response = Twilio::TwiML::Response.new do |r|
+				r.Sms "You have asked for data on #{location_name}."
+			end
+		# If the message starts with "POST" then we're saving a new update (DEPRECATED!)
+		elsif received_message.start_with?("POST")
 			# Split the message and get rid of "POST" as we don't need it
 			substrings = received_message.split
 			substrings.delete_at(0)

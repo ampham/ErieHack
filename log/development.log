@@ -19094,3 +19094,21 @@ Processing by LocationsController#show as HTML
 Completed 200 OK in 440ms (Views: 432.0ms | ActiveRecord: 0.6ms)
 
 
+  [1m[36mLocation Load (2.7ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE (id=1)[0m
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT  "locations".* FROM "locations" ORDER BY "locations"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mStatus Load (0.2ms)[0m  [1m[34mSELECT "statuses".* FROM "statuses" WHERE "statuses"."location_id" = ?[0m  [["location_id", 1]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mStatus Load (0.2ms)[0m  [1m[34mSELECT "statuses".* FROM "statuses" WHERE "statuses"."location_id" = ?[0m  [["location_id", 1]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mStatus Load (0.3ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."location_id" = ? ORDER BY "statuses"."id" ASC LIMIT ?[0m  [["location_id", 1], ["LIMIT", 1]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mStatus Load (0.1ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."location_id" = ? ORDER BY "statuses"."id" ASC LIMIT ?[0m  [["location_id", 1], ["LIMIT", 1]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mStatus Load (0.1ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."location_id" = ? ORDER BY "statuses"."id" ASC LIMIT ?[0m  [["location_id", 1], ["LIMIT", 1]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mStatus Load (0.1ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."location_id" = ? ORDER BY "statuses"."id" ASC LIMIT ?[0m  [["location_id", 1], ["LIMIT", 1]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mStatus Load (0.1ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."location_id" = ? ORDER BY "statuses"."id" ASC LIMIT ?[0m  [["location_id", 1], ["LIMIT", 1]]
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
