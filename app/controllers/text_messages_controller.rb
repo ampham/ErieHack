@@ -11,7 +11,8 @@ class TextMessagesController < ApplicationController
 			location_name = Location.find_by(id: location_id).title
 
 			response = Twilio::TwiML::Response.new do |r|
-				r.Sms "You have asked for data on #{location_name}."
+				r.Sms "You have asked for data on #{location_name}." +
+				"\n And something on a new line."
 			end
 		# If the message starts with "POST" then we're saving a new update (DEPRECATED!)
 		elsif received_message.start_with?("POST")
