@@ -19128,3 +19128,36 @@ Completed 200 OK in 440ms (Views: 432.0ms | ActiveRecord: 0.6ms)
   [1m[36mStatus Load (0.2ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."location_id" = ? ORDER BY "statuses"."id" DESC LIMIT ?[0m  [["location_id", 1], ["LIMIT", 1]]
   [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   [1m[36mStatus Load (0.2ms)[0m  [1m[34mSELECT  "statuses".* FROM "statuses" WHERE "statuses"."location_id" = ? ORDER BY "statuses"."id" DESC LIMIT ?[0m  [["location_id", 1], ["LIMIT", 1]]
+Started GET "/api/v1/locations" for ::1 at 2017-03-09 19:55:41 -0500
+Processing by ApiLocationsController#index as HTML
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+Completed 200 OK in 52ms (Views: 19.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/v1/locations/1" for ::1 at 2017-03-09 19:55:52 -0500
+Processing by ApiLocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUpdate Load (0.2ms)[0m  [1m[34mSELECT "updates".* FROM "updates" WHERE "updates"."location_id" = ?[0m  [["location_id", 1]]
+  [1m[36mStatus Load (0.2ms)[0m  [1m[34mSELECT "statuses".* FROM "statuses" WHERE "statuses"."location_id" = ?[0m  [["location_id", 1]]
+Completed 200 OK in 62ms (Views: 28.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/v1/locations/2" for ::1 at 2017-03-09 19:55:57 -0500
+Processing by ApiLocationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLocation Load (0.2ms)[0m  [1m[34mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUpdate Load (0.1ms)[0m  [1m[34mSELECT "updates".* FROM "updates" WHERE "updates"."location_id" = ?[0m  [["location_id", 2]]
+  [1m[36mStatus Load (0.1ms)[0m  [1m[34mSELECT "statuses".* FROM "statuses" WHERE "statuses"."location_id" = ?[0m  [["location_id", 2]]
+Completed 200 OK in 12ms (Views: 2.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/locations/1" for ::1 at 2017-03-09 19:56:00 -0500
+Processing by ApiLocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLocation Load (0.1ms)[0m  [1m[34mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUpdate Load (0.1ms)[0m  [1m[34mSELECT "updates".* FROM "updates" WHERE "updates"."location_id" = ?[0m  [["location_id", 1]]
+  [1m[36mStatus Load (0.1ms)[0m  [1m[34mSELECT "statuses".* FROM "statuses" WHERE "statuses"."location_id" = ?[0m  [["location_id", 1]]
+Completed 200 OK in 18ms (Views: 5.2ms | ActiveRecord: 0.4ms)
+
+
