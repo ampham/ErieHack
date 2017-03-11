@@ -2,7 +2,7 @@ class UpdatesController < ApplicationController
 
 	# This is just for demonstrating how an SMS POST would work
 	def index
-		@updates = Update.all
+		@updates = Update.all.order('created_at DESC')
 	end
 
 	def new
