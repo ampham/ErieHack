@@ -2,21 +2,35 @@
 <h2><%= @location.description %></h2>
 
 <% if logged_in? %>
-	<h4><%= link_to "Add new status", new_status_path %></h4>
+	<h4><%= link_to 'Edit this location', edit_location_path %></h4>
+<% end %>
+
+<br>
+<br>
+<p>Stream Class: <%= @location.stream_class %></p>
+<p>Quality Issues: <%= @location.quality_issues %></p>
+<br>
+
+<h3>Updates</h3>
+<br>
+
+<% if logged_in? %>
+	<br>
+	<h4><%= link_to "Add new update", new_status_path %></h4>
 	<br>
 <% end %>
 
-<ul>
-	<% @statuses.each do |stat| %>
-		<h4>Update for: <%= link_to stat.created_at, status_path(stat.id) %></h4>
-		<% #This is ugly, but all it does is grab the User associated with a status %>
-		<% # TODO: Rewrite my_user method for Statuses! %>
-		<p>Conductivity: <%= stat.conductivity %>%</p>
-		<p>Dissolved Oxygen: <%= stat.o2 %>%</p>
-		<p>pH: <%= stat.pH %>%</p>
-		<p>Turbidity: <%= stat.turbidity %>%</p>
-		<br>
-	<% end %>
-</ul>
+	<ul>
+		<% @statuses.each do |stat| %>
+			<h4>Update for: <%= link_to stat.created_at, status_path(stat.id) %></h4>
+			<% #This is ugly, but all it does is grab the User associated with a status %>
+			<% # TODO: Rewrite my_user method for Statuses! %>
+			<p>Conductivity: <%= stat.conductivity %>%</p>
+			<p>Dissolved Oxygen: <%= stat.o2 %>%</p>
+			<p>pH: <%= stat.pH %>%</p>
+			<p>Turbidity: <%= stat.turbidity %>%</p>
+			<br>
+		<% end %>
+	</ul>
 
-<h4><%= link_to "Back to Locations", locations_path %></h4>
+	<h4><%= link_to "Back to Locations", locations_path %></h4>
