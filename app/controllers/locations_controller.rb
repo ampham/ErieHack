@@ -42,6 +42,6 @@ class LocationsController < ApplicationController
 	private
 
 		def allowed_params
-			params.require(:location).permit(:title, :description)
+			params.require(:location).permit(:title, :description, :stream_class, :quality_issues)
 		end
 end

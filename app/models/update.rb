@@ -21,10 +21,5 @@ class Update < ApplicationRecord
 		end
 		return @locations_list
 	end
-
-	# return the user who created this update
-	def my_user(user_id)
-		return User.find_by_id(user_id)
-	end
 	
 end
