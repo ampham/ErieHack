@@ -18,10 +18,10 @@ class TextMessagesController < ApplicationController
 			# Build the response object to send
 			response = Twilio::TwiML::Response.new do |r|
 				r.Sms "You have asked for data on #{location_name}." +
-				"\n\n Conductivity: #{conductivity}" +
-				"\n Dissolved O2: #{o2}" +
-				"\n pH: #{ph}" +
-				"\n Turbidity: #{turbidity}"
+				"\n\n Conductivity: #{conductivity}%" +
+				"\n Dissolved O2: #{o2}%" +
+				"\n pH: #{ph}%" +
+				"\n Turbidity: #{turbidity}%"
 			end
 		# If the message starts with "POST" then we're saving a new update (DEPRECATED!)
 		elsif received_message.start_with?("POST")

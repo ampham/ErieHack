@@ -20083,3 +20083,17 @@ Processing by LocationsController#show as HTML
 Completed 200 OK in 479ms (Views: 455.4ms | ActiveRecord: 1.6ms)
 
 
+Started GET "/locations/1" for ::1 at 2017-03-11 11:42:27 -0500
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLocation Load (0.5ms)[0m  [1m[34mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering locations/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  [1m[36mStatus Load (0.6ms)[0m  [1m[34mSELECT "statuses".* FROM "statuses" WHERE "statuses"."location_id" = ? ORDER BY created_at DESC[0m  [["location_id", 1]]
+  Rendered locations/show.html.erb within layouts/application (13.2ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (3.4ms)
+  Rendered layouts/_footer.html.erb (6.9ms)
+Completed 200 OK in 306ms (Views: 283.9ms | ActiveRecord: 1.6ms)
+
+

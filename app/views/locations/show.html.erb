@@ -23,8 +23,6 @@
 	<ul>
 		<% @statuses.each do |stat| %>
 			<h4>Update for: <%= link_to stat.created_at, status_path(stat.id) %></h4>
-			<% #This is ugly, but all it does is grab the User associated with a status %>
-			<% # TODO: Rewrite my_user method for Statuses! %>
 			<p>Conductivity: <%= stat.conductivity %>%</p>
 			<p>Dissolved Oxygen: <%= stat.o2 %>%</p>
 			<p>pH: <%= stat.pH %>%</p>
