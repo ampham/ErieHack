@@ -1,5 +1,10 @@
 class UpdatesController < ApplicationController
 
+	# This is just for demonstrating how an SMS POST would work
+	def index
+		@updates = Update.all
+	end
+
 	def new
 		@update = Update.new
 		#@update.user_id = current_user.id

@@ -1,0 +1,12 @@
+<h1>List of Updates</h1>
+
+<ul>
+	<% @updates.each do |update| %>
+		<h4>Update for <%= update.created_at %></h4>
+		<p>Lead: <%= update.lead %></p>
+		<p>Mercury: <%= update.mercury %></p>
+		<p>Plutonium: <%= update.plutonium %></p>
+		<br>
+		<br>
+	<% end %>
+</ul>
