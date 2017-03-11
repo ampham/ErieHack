@@ -14,6 +14,20 @@ class LocationsController < ApplicationController
 		@location = Location.new
 	end
 
+	def edit
+		@location = Location.find(params[:id])
+	end
+
+	def update
+		@location = Location.find(params[:id])
+
+		if @location.update(allowed_params)
+			redirect_to @location
+		else
+			render 'edit'
+		end
+	end
+
 	def create
 		@location = Location.new(allowed_params)
 

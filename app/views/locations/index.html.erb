@@ -10,6 +10,7 @@
 	<% @locations.each do |loc| %>
 		<h4><%= link_to loc.title, location_path(loc.id) %></h4>
 		<p><%= loc.description %></p>
+		<p><%= link_to 'Edit Location', edit_location_path(loc) %></p>
 		<br>
 	<% end %>
 </ul>

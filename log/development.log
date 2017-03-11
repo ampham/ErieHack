@@ -19333,3 +19333,249 @@ Migrating to AddStreamClassToLocation (20170311153738)
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 [0m
+Started GET "/" for ::1 at 2017-03-11 11:18:10 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1070.3ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (22.9ms)
+  Rendered layouts/_footer.html.erb (2.3ms)
+Completed 200 OK in 1651ms (Views: 1596.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/locations" for ::1 at 2017-03-11 11:18:29 -0500
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mLocation Load (3.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  Rendered locations/index.html.erb within layouts/application (83.4ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 646ms (Views: 505.3ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/locations/1/edit" for ::1 at 2017-03-11 11:18:33 -0500
+Processing by LocationsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLocation Load (0.5ms)[0m  [1m[34mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering locations/edit.html.erb within layouts/application
+  Rendered locations/edit.html.erb within layouts/application (94.5ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 384ms (Views: 323.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for ::1 at 2017-03-11 11:19:03 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2044.8ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (3.7ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 2313ms (Views: 2297.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2017-03-11 11:20:18 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NLQWNSjQIzhpGlgfhZY70PtMtFbx41SIru2FcM+hEIYBZ6/T9U72dzw4yBwi7hY50mmCiUQhmgvrT673/O69XQ==", "session"=>{"email"=>"ampham@ampham.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ampham@ampham.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/104
+Completed 302 Found in 208ms (ActiveRecord: 6.6ms)
+
+
+Started GET "/users/104" for ::1 at 2017-03-11 11:20:18 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"104"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (6.5ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 246ms (Views: 233.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/locations" for ::1 at 2017-03-11 11:20:21 -0500
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  [1m[36mLocation Load (0.6ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  Rendered locations/index.html.erb within layouts/application (23.7ms)
+  Rendered layouts/_shim.html.erb (3.2ms)
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 283ms (Views: 272.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/locations/1/edit" for ::1 at 2017-03-11 11:20:22 -0500
+Processing by LocationsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering locations/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  Rendered shared/_location_error_messages.html.erb (1.4ms)
+  Rendered locations/edit.html.erb within layouts/application (1901.5ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (3.7ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 2231ms (Views: 2220.1ms | ActiveRecord: 1.4ms)
+
+
+Started PATCH "/locations/1" for ::1 at 2017-03-11 11:20:47 -0500
+Processing by LocationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n7emscPt9Ahz4PdVqq64yS7UenhMPaEFtI2NlgX0+a9/qXjafs+NvSbiMHREm2X1MA8zf6isbvg4hwpk/pWt8g==", "location"=>{"title"=>"Niagara River", "description"=>"This is a new description. It wasn't here before."}, "commit"=>"Save", "id"=>"1"}
+  [1m[36mLocation Load (0.7ms)[0m  [1m[34mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (16.3ms)[0m  [1m[33mUPDATE "locations" SET "description" = ?, "updated_at" = ? WHERE "locations"."id" = ?[0m  [["description", "This is a new description. It wasn't here before."], ["updated_at", 2017-03-11 16:20:47 UTC], ["id", 1]]
+  [1m[35m (31.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/locations/1
+Completed 302 Found in 186ms (ActiveRecord: 53.0ms)
+
+
+Started GET "/locations/1" for ::1 at 2017-03-11 11:20:47 -0500
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLocation Load (1.7ms)[0m  [1m[34mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering locations/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  [1m[36mStatus Load (13.2ms)[0m  [1m[34mSELECT "statuses".* FROM "statuses" WHERE "statuses"."location_id" = ? ORDER BY created_at DESC[0m  [["location_id", 1]]
+  Rendered locations/show.html.erb within layouts/application (148.4ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (4.3ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 532ms (Views: 395.1ms | ActiveRecord: 28.8ms)
+
+
+Started GET "/locations" for ::1 at 2017-03-11 11:20:53 -0500
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  [1m[36mLocation Load (0.8ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  Rendered locations/index.html.erb within layouts/application (18.8ms)
+  Rendered layouts/_shim.html.erb (2.6ms)
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 284ms (Views: 279.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/locations/2/edit" for ::1 at 2017-03-11 11:20:55 -0500
+Processing by LocationsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering locations/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  Rendered shared/_location_error_messages.html.erb (1.4ms)
+  Rendered locations/edit.html.erb within layouts/application (30.0ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (3.4ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 287ms (Views: 273.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/locations" for ::1 at 2017-03-11 11:21:44 -0500
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  [1m[36mLocation Load (0.7ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  Rendered locations/index.html.erb within layouts/application (22.2ms)
+  Rendered layouts/_shim.html.erb (1.5ms)
+  Rendered layouts/_header.html.erb (3.9ms)
+  Rendered layouts/_footer.html.erb (4.6ms)
+Completed 200 OK in 326ms (Views: 321.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/locations/3" for ::1 at 2017-03-11 11:21:46 -0500
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering locations/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  [1m[36mStatus Load (0.5ms)[0m  [1m[34mSELECT "statuses".* FROM "statuses" WHERE "statuses"."location_id" = ? ORDER BY created_at DESC[0m  [["location_id", 3]]
+  Rendered locations/show.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (3.2ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 354ms (Views: 251.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/locations/4" for ::1 at 2017-03-11 11:21:50 -0500
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering locations/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  [1m[36mStatus Load (0.5ms)[0m  [1m[34mSELECT "statuses".* FROM "statuses" WHERE "statuses"."location_id" = ? ORDER BY created_at DESC[0m  [["location_id", 4]]
+  Rendered locations/show.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (3.4ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 353ms (Views: 341.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/locations" for ::1 at 2017-03-11 11:21:52 -0500
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  [1m[36mLocation Load (0.7ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  Rendered locations/index.html.erb within layouts/application (23.7ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (3.3ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 359ms (Views: 355.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/locations/2/edit" for ::1 at 2017-03-11 11:21:53 -0500
+Processing by LocationsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering locations/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  Rendered shared/_location_error_messages.html.erb (1.5ms)
+  Rendered locations/edit.html.erb within layouts/application (25.0ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (6.0ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 299ms (Views: 291.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/locations" for ::1 at 2017-03-11 11:21:55 -0500
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  [1m[36mLocation Load (2.5ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  Rendered locations/index.html.erb within layouts/application (33.0ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (3.2ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 321ms (Views: 309.8ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/locations/4/edit" for ::1 at 2017-03-11 11:21:57 -0500
+Processing by LocationsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering locations/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  Rendered shared/_location_error_messages.html.erb (1.5ms)
+  Rendered locations/edit.html.erb within layouts/application (14.7ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (4.7ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 360ms (Views: 353.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/locations" for ::1 at 2017-03-11 11:22:01 -0500
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 104], ["LIMIT", 1]]
+  [1m[36mLocation Load (0.6ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  Rendered locations/index.html.erb within layouts/application (28.0ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (7.8ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 346ms (Views: 340.4ms | ActiveRecord: 1.1ms)
+
+
