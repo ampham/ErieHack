@@ -30,5 +30,8 @@ Rails.application.routes.draw do
     end
   end
 
+  # temporary endpoint for demonstration only
+  get '/current' => 'api_locations#current'
+
   post '/sms', to: 'text_messages#send_text'
 end
