@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170311153738) do
+ActiveRecord::Schema.define(version: 20170331233650) do
+
+  create_table "buffalo_reports", force: :cascade do |t|
+    t.string   "street"
+    t.string   "zip"
+    t.decimal  "lead"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "locations", force: :cascade do |t|
     t.string   "title"

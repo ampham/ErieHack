@@ -1,0 +1,2 @@
+class BuffaloReport < ApplicationRecord
+end
