@@ -1,0 +1,7 @@
+<h1>Buffalo Water Reports</h1>
+
+<% @reports.each do |rep| %>
+	<h3><%= rep.street %></h3>
+	<p>ZIP Code: <%= rep.zip %></p>
+	<p>Lead concentration: <%= rep.lead %> ppb</p>
+<% end %>
