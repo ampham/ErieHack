@@ -1,0 +1,10 @@
+<h1>Water Quality Alerts</h1>
+
+<table>
+	<% @alerts.each do |alert| %>
+		<tr>
+			<td><%= alert.message %></td>
+			<td><%= alert.created_at %></td>
+		</tr>
+	<% end %>
+</table>
