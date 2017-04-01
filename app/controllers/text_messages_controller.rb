@@ -52,9 +52,20 @@ class TextMessagesController < ApplicationController
 		# TODO: This needs A LOT of sanity checking
 		incoming = params["text"]
 		alert_id = incoming.split(" ")[1].strip.to_i
-		alert_status = Alert.find_by_id(alert_id).get_status
+		alert_status = Alert.find_by_id(alert_id).status
 
-		reply = "The status of ticket number #{alert_id} is #{alert_status}. Thanks for contacting Waterwatcher"
+		reply = "The status of ticket number #{alert_id} is #{StatusOption.find_by_id(alert_status)}. " 
+
+		case alert_status
+		when 1
+			reply << "Your report has been received and will be investigated soon. "
+		when 2
+			reply << "Your report has been assigned to someone on our team and will be resolved shortly. "
+		when 3
+			reply << "The issue you reported has been taken care of. "
+		end
+
+		reply << "Thanks for contacting Waterwatcher."
 
 		render json: { status: reply }
 
