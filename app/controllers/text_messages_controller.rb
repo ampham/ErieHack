@@ -13,6 +13,7 @@ class TextMessagesController < ApplicationController
 			end	
 		end
 
+		response = "Yeah"
 		if matching_reports.size == 1
 			response = "Lead concentration for #{matching_reports[0]} in #{incoming_text} "
 				+ "is #{matching_reports.lead} ppb."
