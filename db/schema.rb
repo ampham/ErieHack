@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170401134945) do
+ActiveRecord::Schema.define(version: 20170401135826) do
 
   create_table "alerts", force: :cascade do |t|
     t.text     "message"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20170401134945) do
     t.integer  "status"
     t.text     "notes"
     t.string   "address"
+    t.string   "phone"
   end
 
   create_table "buffalo_reports", force: :cascade do |t|

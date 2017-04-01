@@ -4,6 +4,7 @@
 	<thead>
 		<tr>
 		  <th>ID</th>
+		  <th>Date Submitted</th>
 		  <th>Alert</th>
 		  <th>Status</th>
 		  <th>Address</th>
@@ -14,6 +15,10 @@
 	</thead>
 	<% @alerts.each do |alert| %>
 		<tr>
+			<td><%= alert.id %></td>
+			<td><%= alert.message %></td>
+			<td><%= alert.message %></td>
+			<td><%= alert.message %></td>
 			<td><%= alert.message %></td>
 			<td><%= alert.created_at %></td>
 		</tr>
