@@ -2,7 +2,7 @@ class AlertsController < ApplicationController
 	before_action :set_alert, only: [:edit, :show, :update]
 
 	def index
-		@alerts = Alert.all
+		@alerts = Alert.all.order("created_at DESC")
 	end
 
 	def edit

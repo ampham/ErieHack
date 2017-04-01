@@ -1,0 +1,2 @@
+class StatusOption < ApplicationRecord
+end

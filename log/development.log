@@ -24026,3 +24026,70 @@ Processing by AlertsController#index as HTML
 Completed 200 OK in 2289ms (Views: 2286.6ms | ActiveRecord: 0.6ms)
 
 
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (15.0ms)[0m  [1m[32mINSERT INTO "alerts" ("message", "created_at", "updated_at", "status", "notes", "address", "phone") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["message", "Cthulu emerging from the sink"], ["created_at", 2017-04-01 19:05:30 UTC], ["updated_at", 2017-04-01 19:05:30 UTC], ["status", 1], ["notes", "Received"], ["address", "987 Eight St."], ["phone", "871-234-5645"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/alerts" for ::1 at 2017-04-01 15:05:35 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.5ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts" ORDER BY created_at DESC[0m
+  Rendered alerts/index.html.erb within layouts/application (14.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 706ms (Views: 694.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/alerts/2/edit" for ::1 at 2017-04-01 15:05:51 -0400
+Processing by AlertsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlert Load (0.4ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering alerts/edit.html.erb within layouts/application
+  Rendered alerts/edit.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 109ms (Views: 90.0ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/alerts/2" for ::1 at 2017-04-01 15:05:55 -0400
+Processing by AlertsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0gNgk5sfoBAT9lEdjrHT2LbZl7TIAl6vUx8jumUQSQPk1Fk9sJC2myfaHnNkEDv2Sq0q1xm6MF1bLm8p/azQGA==", "alert"=>{"status"=>"4", "notes"=>"Received"}, "commit"=>"Update Alert", "id"=>"2"}
+  [1m[36mAlert Load (0.4ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameter: notes
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "alerts" SET "status" = ?, "updated_at" = ? WHERE "alerts"."id" = ?[0m  [["status", 4], ["updated_at", 2017-04-01 19:05:55 UTC], ["id", 2]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/alerts
+Completed 302 Found in 9ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/alerts" for ::1 at 2017-04-01 15:05:55 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.4ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts" ORDER BY created_at DESC[0m
+  Rendered alerts/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 91ms (Views: 88.4ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateStatusOptions (20170401190716)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "status_options" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170401190716"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
