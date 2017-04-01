@@ -1,7 +1,6 @@
 class TextMessagesController < ApplicationController
 	skip_before_action :verify_authenticity_token
 
-
 	def reply_zip
 		@reports = BuffaloReport.all
 		incoming_text = params["text"].split("zip")[1].strip
@@ -29,8 +28,6 @@ class TextMessagesController < ApplicationController
 
 		# send out the reply
 		render json: { response: reply}
-
-		#render json: { text: incoming_text }
 	end
 
 	def get_alert

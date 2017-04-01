@@ -10,12 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170401034717) do
+ActiveRecord::Schema.define(version: 20170401134945) do
 
   create_table "alerts", force: :cascade do |t|
     t.text     "message"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "status"
+    t.text     "notes"
+    t.string   "address"
   end
 
   create_table "buffalo_reports", force: :cascade do |t|
