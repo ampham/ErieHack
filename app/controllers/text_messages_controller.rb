@@ -17,11 +17,16 @@ class TextMessagesController < ApplicationController
 		if matching_reports.size == 1
 			reply = "Lead concentration for #{matching_reports[0]} in #{incoming_text} "
 				+ "is #{matching_reports.lead} ppb."
-			else 
-				resposne = "Not a valid zip code!"
+			elsif matching_reports.size > 1
+				reply = "There are #{matching_reports.size} lead reports for #{incoming_text}:\n"
+				for report in matching_reports
+					reply << "#{report.street}: #{report.lead} ppb\n"
+				end
+			else
+				reply = "Not a valid zip code!"
 		end
 
-		render json: { response: matching_reports.size.to_s}
+		render json: { response: reply}
 
 		#render json: { text: incoming_text }
 	end
