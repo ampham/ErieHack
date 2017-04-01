@@ -21,7 +21,7 @@ class TextMessagesController < ApplicationController
 				resposne = "Not a valid zip code!"
 		end
 
-		render json: { response: reply}
+		render json: { response: matching_reports.size.to_s}
 
 		#render json: { text: incoming_text }
 	end
