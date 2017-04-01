@@ -3,9 +3,15 @@ class TextMessagesController < ApplicationController
 
 
 	def reply_zip
+		@reports = BuffaloReport.all
+		incoming_text = params["text"]
 
+		render json: { text: incoming_text }
 	end
 
+	def test_json
+		render json: { zip: "12345" }
+	end
 
 
 	# TODO: Move a lot of this into the models

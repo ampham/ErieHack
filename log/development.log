@@ -22443,3 +22443,13 @@ Processing by BuffaloReportsController#index as HTML
 Completed 200 OK in 100ms (Views: 95.7ms | ActiveRecord: 0.8ms)
 
 
+Started GET "/test" for ::1 at 2017-03-31 21:30:44 -0400
+Processing by TextMessagesController#test_json as HTML
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/test" for ::1 at 2017-03-31 21:31:16 -0400
+Processing by TextMessagesController#test_json as HTML
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
