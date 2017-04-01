@@ -31,16 +31,18 @@ class TextMessagesController < ApplicationController
 	end
 
 	def get_alert
+		@alert = Alert.new
 		new_alert = params["text"]
-		alert_body = new_alert.split(" ")
-		reply = "You wanted to report"
-		the_report = ""
-		for x in 1..alert_body.size-1
-			the_report << " #{alert_body[x]}"
-		end
+		alert_body = new_alert.split(":")
+		
+		@alert.address = alert_body[1].strip
+		@alert.message = alert_body[2].strip
+		@alert.phone = params["phone"]
+		@alert.status = 0
+		@alert.notes = "Received"
 
-		Alert.create(message: the_report.strip)
-		reply << the_report
+		reply = "You wanted to report " << @alert.message
+		@alert.save
 		
 		render json: { confirmation: reply }
 	end
