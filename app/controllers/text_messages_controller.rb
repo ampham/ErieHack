@@ -37,12 +37,13 @@ class TextMessagesController < ApplicationController
 		new_alert = params["text"]
 		alert_body = new_alert.split("alert")
 		reply = "You wanted to report"
-		the_report = ""
-		for x in 1..alert_body.size-1
-			the_report << " #{alert_body[x]}"
-		end
+		the_report = alert_body[0]
+		#for x in 1..alert_body.size-1
+		#	the_report << " #{alert_body[0]}"
+		#end
 
 		Alert.create(message: the_report)
+		reply << the_report
 		
 		render json: { confirmation: reply + the_report}
 	end
