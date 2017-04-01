@@ -34,6 +34,10 @@ Rails.application.routes.draw do
   # temporary endpoint for demonstration only
   get '/current' => 'api_locations#current'
 
+  scope '/buffalo_reports' do
+    get '/test', to: 'buffalo_reports#test'
+  end
+
   post '/zip', to: 'text_messages#reply_zip'
   get '/test', to: 'text_messages#test_json'
 

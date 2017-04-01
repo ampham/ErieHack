@@ -6,7 +6,23 @@ class TextMessagesController < ApplicationController
 		@reports = BuffaloReport.all
 		incoming_text = params["text"]
 
-		render json: { text: incoming_text }
+		matching_reports = []
+		for report in @reports
+			if report.zip == incoming_text
+				matching_reports << report
+			end	
+		end
+
+		if matching_reports.size == 1
+			response = "Lead concentration for #{matching_reports[0]} in #{incoming_text} "
+				+ "is #{matching_reports.lead} ppb."
+			else 
+				resposne = "Not a valid zip code!"
+		end
+
+		render json: { text: response}
+
+		#render json: { text: incoming_text }
 	end
 
 	def test_json
