@@ -21654,3 +21654,737 @@ Processing by BuffaloReportsController#index as HTML
 Completed 200 OK in 76ms (Views: 72.7ms | ActiveRecord: 0.8ms)
 
 
+  [1m[36mBuffaloReport Load (0.3ms)[0m  [1m[34mSELECT  "buffalo_reports".* FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ? LIMIT ?[0m  [["id", 74], ["LIMIT", 1]]
+  [1m[36mBuffaloReport Load (0.8ms)[0m  [1m[34mSELECT "buffalo_reports".* FROM "buffalo_reports"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 3]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 5]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 6]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 7]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 8]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 9]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 10]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 11]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 12]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 13]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 14]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 15]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 16]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 17]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 18]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 19]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 20]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 21]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 22]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 23]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 24]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 25]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 26]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 27]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 28]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 29]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 30]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 31]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 32]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 33]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 34]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 35]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 36]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 37]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 38]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 39]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 40]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 41]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 42]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 43]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 44]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 45]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 46]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 47]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 48]]
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 49]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 50]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 51]]
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 52]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 53]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 54]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 55]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 56]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 57]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 58]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 59]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 60]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 61]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 62]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 63]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 64]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 65]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 66]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 67]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 68]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 69]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 70]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 71]]
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 72]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 73]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 74]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 75]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 76]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 77]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 78]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 79]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 80]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 81]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 82]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 83]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 84]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 85]]
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 86]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 87]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 88]]
+  [1m[35m (4.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 89]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 90]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 91]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 92]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 93]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 94]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 95]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 96]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 97]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 98]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 99]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 100]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 101]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 102]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 103]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 104]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 105]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 106]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 107]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 108]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 109]]
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 110]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 111]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 112]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 113]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 114]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 115]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 116]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 117]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 118]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 119]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 120]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ?[0m  [["id", 121]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Fillmore Ave"], ["zip", "14212"], ["lead", #<BigDecimal:7ff35bd9a7c8,'0.112E2',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Domedion Ave"], ["zip", "14211"], ["lead", #<BigDecimal:7ff35cb289f8,'0.95E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Rickert Ave"], ["zip", "14211"], ["lead", #<BigDecimal:7ff35cb4b548,'0.91E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Norwood Ave"], ["zip", "14222"], ["lead", #<BigDecimal:7ff35be1ae28,'0.81E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Lancaster Ave"], ["zip", "14222"], ["lead", #<BigDecimal:7ff35be5a0c8,'0.58E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Genesee St"], ["zip", "14211"], ["lead", #<BigDecimal:7ff35be6bdf0,'0.54E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Highgate Ave"], ["zip", "14215"], ["lead", #<BigDecimal:7ff35be99d68,'0.47E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Minnesota Ave"], ["zip", "14215"], ["lead", #<BigDecimal:7ff35cbf9df0,'0.46E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Easton Ave"], ["zip", "14215"], ["lead", #<BigDecimal:7ff35cc204f0,'0.43E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Wyoming Ave"], ["zip", "14215"], ["lead", #<BigDecimal:7ff35d872000,'0.39E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Dunlop Ave"], ["zip", "14215"], ["lead", #<BigDecimal:7ff35d8a2020,'0.37E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Connecticut St"], ["zip", "14213"], ["lead", #<BigDecimal:7ff35cc538c8,'0.36E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Kensington Ave"], ["zip", "14215"], ["lead", #<BigDecimal:7ff35beabce8,'0.36E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Lewis St"], ["zip", "14206"], ["lead", #<BigDecimal:7ff35d8e9bc8,'0.32E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Tonawanda St"], ["zip", "14207"], ["lead", #<BigDecimal:7ff35ccb93d0,'0.31E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Hickory St"], ["zip", "14204"], ["lead", #<BigDecimal:7ff35cd584a8,'0.29E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Chapin Pkwy"], ["zip", "14209"], ["lead", #<BigDecimal:7ff35cd880b8,'0.28E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Highgate Ave"], ["zip", "14215"], ["lead", #<BigDecimal:7ff35cdb9640,'0.26E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Norwalk Ave"], ["zip", "14216"], ["lead", #<BigDecimal:7ff35cc11b58,'0.26E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Koons Ave"], ["zip", "14211"], ["lead", #<BigDecimal:7ff35cdf6c20,'0.25E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Moselle St"], ["zip", "14211"], ["lead", #<BigDecimal:7ff35c08af00,'0.25E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Millicent Ave"], ["zip", "14215"], ["lead", #<BigDecimal:7ff35ce34660,'0.24E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Halbert St"], ["zip", "14214"], ["lead", #<BigDecimal:7ff35ce77eb0,'0.23E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Baynes St"], ["zip", "14213"], ["lead", #<BigDecimal:7ff35ce95ff0,'0.22E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Shenandoah Rd"], ["zip", "14220"], ["lead", #<BigDecimal:7ff35ceb4978,'0.22E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Jewett Ave"], ["zip", "14214"], ["lead", #<BigDecimal:7ff35d900e68,'0.21E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Quincy St"], ["zip", "14212"], ["lead", #<BigDecimal:7ff35ced4930,'0.21E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Hastings Ave"], ["zip", "14215"], ["lead", #<BigDecimal:7ff35cef5608,'0.2E1',9(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "McClellan Circle"], ["zip", "14220"], ["lead", #<BigDecimal:7ff35cf14850,'0.2E1',9(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Haven St"], ["zip", "14211"], ["lead", #<BigDecimal:7ff35cf26f50,'0.19E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Wyoming Ave"], ["zip", "14215"], ["lead", #<BigDecimal:7ff35cf46058,'0.19E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Halbert St"], ["zip", "14214"], ["lead", #<BigDecimal:7ff35bf0dc40,'0.17E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Holland Place"], ["zip", "14209"], ["lead", #<BigDecimal:7ff35bf2d180,'0.16E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Kensington"], ["zip", "14215"], ["lead", #<BigDecimal:7ff35bf7ce88,'0.16E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Summit Ave"], ["zip", "14214"], ["lead", #<BigDecimal:7ff35bf9ca30,'0.16E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Berkley Place"], ["zip", "14209"], ["lead", #<BigDecimal:7ff35bfae7f8,'0.15E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Seneca St"], ["zip", "14210"], ["lead", #<BigDecimal:7ff35bfcd658,'0.15E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (14.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "West Ave"], ["zip", "14213"], ["lead", #<BigDecimal:7ff35f923588,'0.15E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Birch Place"], ["zip", "14215"], ["lead", #<BigDecimal:7ff35c0ba3b8,'0.14E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Lawn Ave"], ["zip", "14207"], ["lead", #<BigDecimal:7ff35f94ad68,'0.14E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Moeller St"], ["zip", "14211"], ["lead", #<BigDecimal:7ff360009758,'0.14E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "West Oakwood Pl"], ["zip", "14216"], ["lead", #<BigDecimal:7ff360028978,'0.14E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Zenner St"], ["zip", "14211"], ["lead", #<BigDecimal:7ff36006bea8,'0.14E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Clinton St"], ["zip", "14206"], ["lead", #<BigDecimal:7ff36008b280,'0.13E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Phyllis Ave"], ["zip", "14215"], ["lead", #<BigDecimal:7ff3600aa900,'0.13E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "University Ave"], ["zip", "14214"], ["lead", #<BigDecimal:7ff3600c8d38,'0.13E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Parkridge Ave"], ["zip", "14215"], ["lead", #<BigDecimal:7ff35f9536e8,'0.11E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Roosevelt Ave"], ["zip", "14215"], ["lead", #<BigDecimal:7ff35f972e08,'0.11E1',18(36)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Auburn Ave"], ["zip", "14222"], ["lead", #<BigDecimal:7ff35f993810,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Bailey Ave"], ["zip", "14215"], ["lead", #<BigDecimal:7ff35f9c2390,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Bell Ave"], ["zip", "14220"], ["lead", #<BigDecimal:7ff35f9e3a68,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Berkshire Ave"], ["zip", "14215"], ["lead", #<BigDecimal:7ff35fa02f80,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Broadway"], ["zip", "14212"], ["lead", #<BigDecimal:7ff35fa22a10,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Cazenovia St"], ["zip", "14206"], ["lead", #<BigDecimal:7ff35fa42400,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Chapin Pkwy"], ["zip", "14209"], ["lead", #<BigDecimal:7ff35fa62c78,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Clinton St"], ["zip", "14206"], ["lead", #<BigDecimal:7ff35fa92c98,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Colonial Circle"], ["zip", "14207"], ["lead", #<BigDecimal:7ff35fab2570,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Comstock Ave"], ["zip", "14215"], ["lead", #<BigDecimal:7ff35fad0fc0,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Crescent Ave"], ["zip", "14214"], ["lead", #<BigDecimal:7ff35fb22e10,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Easton Ave"], ["zip", "14215"], ["lead", #<BigDecimal:7ff35fb43020,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Eggert Rd"], ["zip", "14215"], ["lead", #<BigDecimal:7ff35fb72dc0,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Eggert Rd"], ["zip", "14215"], ["lead", #<BigDecimal:7ff35fbab008,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Florida St"], ["zip", "14208"], ["lead", #<BigDecimal:7ff35fbc79d8,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Florida St"], ["zip", "14208"], ["lead", #<BigDecimal:7ff35fbe5d48,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (14.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Fuller St"], ["zip", "14207"], ["lead", #<BigDecimal:7ff35fcf53a0,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Fulton St"], ["zip", "14204"], ["lead", #<BigDecimal:7ff35fd15c18,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Genesee St"], ["zip", "14211"], ["lead", #<BigDecimal:7ff35fd17298,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Genesee St"], ["zip", "14211"], ["lead", #<BigDecimal:7ff35fd065d8,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Grider St"], ["zip", "14215"], ["lead", #<BigDecimal:7ff35fcf5418,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Hagen St"], ["zip", "14215"], ["lead", #<BigDecimal:7ff35fcd6cc0,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Harding Rd"], ["zip", "14220"], ["lead", #<BigDecimal:7ff35fcc5f38,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Harvard Pl"], ["zip", "14209"], ["lead", #<BigDecimal:7ff35fcb5458,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Hastings Ave"], ["zip", "14215"], ["lead", #<BigDecimal:7ff36017a538,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Hazelwood Ave"], ["zip", "14220"], ["lead", #<BigDecimal:7ff36014b6c0,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Hodge Ave"], ["zip", "14222"], ["lead", #<BigDecimal:7ff360139cb8,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Humboldt Pkwy"], ["zip", "14208"], ["lead", #<BigDecimal:7ff3601298b8,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Huntington Ave"], ["zip", "14214"], ["lead", #<BigDecimal:7ff360118310,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Huntley Rd"], ["zip", "14215"], ["lead", #<BigDecimal:7ff360108168,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Inter Park Ave"], ["zip", "14211"], ["lead", #<BigDecimal:7ff3600e9678,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Leddy St"], ["zip", "14210"], ["lead", #<BigDecimal:7ff3600e3138,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Lovering Ave"], ["zip", "14216"], ["lead", #<BigDecimal:7ff3600d03f8,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Ludington St"], ["zip", "14206"], ["lead", #<BigDecimal:7ff35fc97390,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Main St"], ["zip", "14214"], ["lead", #<BigDecimal:7ff35fc7ed90,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Mapleridge Ave"], ["zip", "14215"], ["lead", #<BigDecimal:7ff35fc6f070,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Moselle St"], ["zip", "14215"], ["lead", #<BigDecimal:7ff35fc5f170,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Niagara Falls Blvd"], ["zip", "14214"], ["lead", #<BigDecimal:7ff35fc4f518,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Norfolk Ave"], ["zip", "14215"], ["lead", #<BigDecimal:7ff35fc3d7c8,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (12.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Normal Ave"], ["zip", "14213"], ["lead", #<BigDecimal:7ff35fc172f8,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "North Parade Ave"], ["zip", "14208"], ["lead", #<BigDecimal:7ff35fc05008,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Northumberland Ave"], ["zip", "14215"], ["lead", #<BigDecimal:7ff35fbf60a8,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Oakmont Ave"], ["zip", "14215"], ["lead", #<BigDecimal:7ff35fbe41c8,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Paderewski St"], ["zip", "14212"], ["lead", #<BigDecimal:7ff35fbcc7d0,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Park St"], ["zip", "14201"], ["lead", #<BigDecimal:7ff35fbbef68,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Parkside Ave"], ["zip", "14216"], ["lead", #<BigDecimal:7ff35fb9a500,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Pratt St"], ["zip", "14204"], ["lead", #<BigDecimal:7ff35fab8a10,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Radcliffe Rd"], ["zip", "14214"], ["lead", #<BigDecimal:7ff35faa8520,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Rees St"], ["zip", "14213"], ["lead", #<BigDecimal:7ff35fa930f8,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Richmond Ave"], ["zip", "14222"], ["lead", #<BigDecimal:7ff35fa7b9a8,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Richmond Ave"], ["zip", "14222"], ["lead", #<BigDecimal:7ff35fa6ac20,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Russell Ave"], ["zip", "14214"], ["lead", #<BigDecimal:7ff35fa5bb08,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Sanders St"], ["zip", "14216"], ["lead", #<BigDecimal:7ff35fa48e40,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Seneca St"], ["zip", "14210"], ["lead", #<BigDecimal:7ff35fa32cd0,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Seneca St"], ["zip", "14210"], ["lead", #<BigDecimal:7ff35fa21840,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Shirley Ave"], ["zip", "14216"], ["lead", #<BigDecimal:7ff35fa108d8,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Shirley Ave"], ["zip", "14215"], ["lead", #<BigDecimal:7ff35f9fbaa0,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "South Park Ave"], ["zip", "14220"], ["lead", #<BigDecimal:7ff35f9eab10,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "St James Pl"], ["zip", "14222"], ["lead", #<BigDecimal:7ff35f9da580,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Stevens Ave"], ["zip", "14215"], ["lead", #<BigDecimal:7ff35f9c8808,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Tacoma Ave"], ["zip", "14216"], ["lead", #<BigDecimal:7ff35f9b1a68,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Taunton Pl"], ["zip", "14216"], ["lead", #<BigDecimal:7ff35f9a10a0,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:21 UTC], ["updated_at", 2017-04-01 00:47:21 UTC]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Tenth St"], ["zip", "14201"], ["lead", #<BigDecimal:7ff35f983aa0,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:22 UTC], ["updated_at", 2017-04-01 00:47:22 UTC]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "University Ave"], ["zip", "14214"], ["lead", #<BigDecimal:7ff35f972b10,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:22 UTC], ["updated_at", 2017-04-01 00:47:22 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Urban St"], ["zip", "14211"], ["lead", #<BigDecimal:7ff35f95b000,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:22 UTC], ["updated_at", 2017-04-01 00:47:22 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Vermont St"], ["zip", "14213"], ["lead", #<BigDecimal:7ff35d930460,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:22 UTC], ["updated_at", 2017-04-01 00:47:22 UTC]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Vincennes St"], ["zip", "14204"], ["lead", #<BigDecimal:7ff3600ba440,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:22 UTC], ["updated_at", 2017-04-01 00:47:22 UTC]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Warwick Ave"], ["zip", "14215"], ["lead", #<BigDecimal:7ff3600a99d8,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:22 UTC], ["updated_at", 2017-04-01 00:47:22 UTC]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "West Ave"], ["zip", "14213"], ["lead", #<BigDecimal:7ff35f938118,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:22 UTC], ["updated_at", 2017-04-01 00:47:22 UTC]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "buffalo_reports" ("street", "zip", "lead", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["street", "Wyoming Ave"], ["zip", "14215"], ["lead", #<BigDecimal:7ff35f923588,'-0.1E1',9(27)>], ["created_at", 2017-04-01 00:47:22 UTC], ["updated_at", 2017-04-01 00:47:22 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/buffalo_reports" for ::1 at 2017-03-31 20:47:27 -0400
+Processing by BuffaloReportsController#index as HTML
+  Rendering buffalo_reports/index.html.erb within layouts/application
+  [1m[36mBuffaloReport Load (0.8ms)[0m  [1m[34mSELECT "buffalo_reports".* FROM "buffalo_reports"[0m
+  Rendered buffalo_reports/index.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 73ms (Views: 69.9ms | ActiveRecord: 0.8ms)
+
+
+  [1m[36mBuffaloReport Load (0.3ms)[0m  [1m[34mSELECT  "buffalo_reports".* FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ? LIMIT ?[0m  [["id", 74], ["LIMIT", 1]]
+  [1m[36mBuffaloReport Load (0.2ms)[0m  [1m[34mSELECT  "buffalo_reports".* FROM "buffalo_reports" WHERE "buffalo_reports"."id" = ? LIMIT ?[0m  [["id", 174], ["LIMIT", 1]]

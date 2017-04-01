@@ -40,9 +40,9 @@ for w in lines
 end
 
 for q in 0..117
-  street = streets[q]
-  zip = zips[q]
-  lead = leads[q] == "ND" ? -1 : leads[q].to_f
+  street = streets[q].strip
+  zip = zips[q].strip
+  lead = leads[q] == "ND" ? -1 : leads[q].strip.to_f
 
   if lead == 0.0
     lead = -1
