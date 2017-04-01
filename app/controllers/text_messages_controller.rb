@@ -34,7 +34,7 @@ class TextMessagesController < ApplicationController
 
 	def get_alert
 		new_alert = params["text"]
-		render json: { confirmation: new_alert }
+		render json: { confirmation: "Something relevant"}
 	end
 
 	def test_json
