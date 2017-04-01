@@ -54,7 +54,8 @@ class TextMessagesController < ApplicationController
 		alert_id = incoming.split(" ")[1].strip.to_i
 		alert_status = Alert.find_by_id(alert_id).status
 
-		reply = "The status of ticket number #{alert_id} is #{StatusOption.find_by_id(alert_status)}. " 
+		# TODO: clean up this method chain plz
+		reply = "The status of ticket number #{alert_id} is #{StatusOption.find_by_id(alert_status).name}. " 
 
 		case alert_status
 		when 1
