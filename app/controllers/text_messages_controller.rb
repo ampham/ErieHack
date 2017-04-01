@@ -37,6 +37,7 @@ class TextMessagesController < ApplicationController
 		new_alert = params["text"]
 		alert_body = new_alert.split("alert")
 		reply = "You wanted to report"
+		the_report = ""
 		for x in 1..alert_body.size-1
 			the_report << " #{alert_body[x]}"
 		end
