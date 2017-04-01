@@ -39,7 +39,7 @@ class TextMessagesController < ApplicationController
 		@alert.address = alert_body[1].strip
 		@alert.message = alert_body[2].strip
 		@alert.phone = params["phone"]
-		@alert.status = 0
+		@alert.status = 1
 		@alert.notes = "Received"
 
 		@alert.save
