@@ -1,0 +1,38 @@
+<h1>Edit Form</h1>
+
+<%= form_for(@alert) do |f| %>
+
+  <div class="field">
+    <%= f.label :id %>: <%= @alert.id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :message %>: <%= @alert.message %>
+  </div>
+
+  <div class="field">
+    <%= f.label :address %>: <%= @alert.address %>
+  </div>
+
+  <div class="field">
+    <%= f.label :phone %>: <%= @alert.phone %>
+  </div>
+
+  <div class="field">
+    <%= f.label :created_at %>: <%= @alert.created_at.strftime("%B %d, %Y") %>
+  </div>
+
+  <div class="field">
+    <%= f.label :status %>
+    <%= f.text_field :status %>
+  </div>
+
+  <div class="field">
+    <%= f.label :notes %>
+    <%= f.text_area :notes %>
+  </div>
+
+	<div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

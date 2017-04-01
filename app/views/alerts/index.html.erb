@@ -16,7 +16,7 @@
 	<% @alerts.each do |alert| %>
 		<tr>
 			<td><%= alert.id %></td>
-			<td><%= alert.created_at %></td>
+			<td><%= alert.created_at.strftime("%B %d, %Y") %></td>
 			<td><%= alert.message %></td>
 			<td><%= alert.status %></td>
 			<td><%= alert.address %></td>
