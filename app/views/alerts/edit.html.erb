@@ -24,7 +24,9 @@
 
   <div class="field">
     <%= f.label :status %>
-    <%= f.text_field :status %>
+    <% # http://stackoverflow.com/questions/21287573/showing-current-value-in-select-tag  %>
+    <%= f.select(:status, options_for_select(StatusOption.all.collect { |s| [s.name, s.id] }, 
+    	@alert.status )) %>
   </div>
 
   <div class="field">

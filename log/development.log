@@ -24093,3 +24093,683 @@ Migrating to CreateStatusOptions (20170401190716)
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 [0m
+Started GET "/alerts" for ::1 at 2017-04-01 15:10:03 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.2ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts" ORDER BY created_at DESC[0m
+  Rendered alerts/index.html.erb within layouts/application (12.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 200ms (Views: 194.3ms | ActiveRecord: 0.9ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "status_options" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Received"], ["created_at", 2017-04-01 19:16:02 UTC], ["updated_at", 2017-04-01 19:16:02 UTC]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "status_options" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Under Investigation"], ["created_at", 2017-04-01 19:16:02 UTC], ["updated_at", 2017-04-01 19:16:02 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "status_options" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Resolved"], ["created_at", 2017-04-01 19:16:02 UTC], ["updated_at", 2017-04-01 19:16:02 UTC]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mStatusOption Load (1.9ms)[0m  [1m[34mSELECT "status_options".* FROM "status_options"[0m
+Started GET "/alerts/2/edit" for ::1 at 2017-04-01 15:16:35 -0400
+Processing by AlertsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlert Load (0.2ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering alerts/edit.html.erb within layouts/application
+  Rendered alerts/edit.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 359ms (Views: 333.8ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/alerts/2" for ::1 at 2017-04-01 15:16:38 -0400
+Processing by AlertsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OfJJUTchz5bO1aRJiT2l7dDCXDn6cc8oyzAOOmZCq8YPJXD/HK7ZHfr56ydjnE3DLLbhWivJodrDAUKp/v4y3Q==", "alert"=>{"status"=>"3", "notes"=>"Received"}, "commit"=>"Update Alert", "id"=>"2"}
+  [1m[36mAlert Load (0.2ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameter: notes
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "alerts" SET "status" = ?, "updated_at" = ? WHERE "alerts"."id" = ?[0m  [["status", 3], ["updated_at", 2017-04-01 19:16:38 UTC], ["id", 2]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/alerts
+Completed 302 Found in 8ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/alerts" for ::1 at 2017-04-01 15:16:38 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.2ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts" ORDER BY created_at DESC[0m
+  Rendered alerts/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 90ms (Views: 82.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/alerts/2/edit" for ::1 at 2017-04-01 15:25:22 -0400
+Processing by AlertsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlert Load (0.2ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering alerts/edit.html.erb within layouts/application
+  [1m[36mStatusOption Load (0.2ms)[0m  [1m[34mSELECT "status_options".* FROM "status_options"[0m
+  Rendered alerts/edit.html.erb within layouts/application (58.3ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 144ms (Views: 140.2ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/alerts/2" for ::1 at 2017-04-01 15:25:29 -0400
+Processing by AlertsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MTjXFHwkpCrY4ahkvqWsofbP3NbTfZaY1RAcbB5w3isH7+66V6uyoezN5wpUBESPCrthtQLF+GrdIVD/hsxHMA==", "alert"=>{"status"=>"3", "notes"=>"Received"}, "commit"=>"Update Alert", "id"=>"2"}
+  [1m[36mAlert Load (0.1ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameter: notes
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/alerts
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/alerts" for ::1 at 2017-04-01 15:25:29 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.2ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts" ORDER BY created_at DESC[0m
+  Rendered alerts/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 72ms (Views: 69.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/alerts/1/edit" for ::1 at 2017-04-01 15:25:33 -0400
+Processing by AlertsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlert Load (0.3ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering alerts/edit.html.erb within layouts/application
+  [1m[36mStatusOption Load (0.2ms)[0m  [1m[34mSELECT "status_options".* FROM "status_options"[0m
+  Rendered alerts/edit.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 77ms (Views: 73.6ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/alerts/1" for ::1 at 2017-04-01 15:26:12 -0400
+Processing by AlertsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Qlg8eIil/GxokyuKDh3FAp5ObwS//Y6F1O1fMQ95JB9zNlLnAGq+Ga9YwHp8OnuTkd264F5X/Gvpa0m1mG1RfQ==", "alert"=>{"status"=>"1", "notes"=>"Received"}, "commit"=>"Update Alert", "id"=>"1"}
+  [1m[36mAlert Load (0.1ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameter: notes
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "alerts" SET "status" = ?, "updated_at" = ? WHERE "alerts"."id" = ?[0m  [["status", 1], ["updated_at", 2017-04-01 19:26:12 UTC], ["id", 1]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/alerts
+Completed 302 Found in 28ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/alerts" for ::1 at 2017-04-01 15:26:12 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.5ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts" ORDER BY created_at DESC[0m
+  Rendered alerts/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 77ms (Views: 74.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/alerts/2/edit" for ::1 at 2017-04-01 15:26:15 -0400
+Processing by AlertsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlert Load (0.4ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering alerts/edit.html.erb within layouts/application
+  [1m[36mStatusOption Load (0.2ms)[0m  [1m[34mSELECT "status_options".* FROM "status_options"[0m
+  Rendered alerts/edit.html.erb within layouts/application (14.8ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 98ms (Views: 93.8ms | ActiveRecord: 1.2ms)
+
+
+Started PATCH "/alerts/2" for ::1 at 2017-04-01 15:26:16 -0400
+Processing by AlertsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3T7/SuxytR9+WIA2/poDuqxuB9OS0fzMagEJz10bQebr6cbkx/2jlEp0z1gUO+uUUBq6sENpkj5iMEVcxafY/Q==", "alert"=>{"status"=>"1", "notes"=>"Received"}, "commit"=>"Update Alert", "id"=>"2"}
+  [1m[36mAlert Load (0.5ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameter: notes
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "alerts" SET "status" = ?, "updated_at" = ? WHERE "alerts"."id" = ?[0m  [["status", 1], ["updated_at", 2017-04-01 19:26:16 UTC], ["id", 2]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/alerts
+Completed 302 Found in 8ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/alerts" for ::1 at 2017-04-01 15:26:16 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.3ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts" ORDER BY created_at DESC[0m
+  Rendered alerts/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 111ms (Views: 108.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/alerts/2/edit" for ::1 at 2017-04-01 15:26:18 -0400
+Processing by AlertsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlert Load (0.2ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering alerts/edit.html.erb within layouts/application
+  [1m[36mStatusOption Load (0.2ms)[0m  [1m[34mSELECT "status_options".* FROM "status_options"[0m
+  Rendered alerts/edit.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 94ms (Views: 91.1ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/alerts/2" for ::1 at 2017-04-01 15:26:24 -0400
+Processing by AlertsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cIvDfiYk2L0oUw9FR97uO9ulIdSlSBrvVGFqwSm28HRGXPrQDavONhx/QCutfwYVJ9Gct3TwdB1cUCZSsQppbw==", "alert"=>{"status"=>"2", "notes"=>"Received"}, "commit"=>"Update Alert", "id"=>"2"}
+  [1m[36mAlert Load (0.2ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameter: notes
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "alerts" SET "status" = ?, "updated_at" = ? WHERE "alerts"."id" = ?[0m  [["status", 2], ["updated_at", 2017-04-01 19:26:24 UTC], ["id", 2]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/alerts
+Completed 302 Found in 8ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/alerts" for ::1 at 2017-04-01 15:26:24 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.3ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts" ORDER BY created_at DESC[0m
+  Rendered alerts/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 109ms (Views: 106.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-04-01 15:28:10 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (22.4ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 128ms (Views: 115.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/alerts" for ::1 at 2017-04-01 15:28:15 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.2ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts" ORDER BY created_at DESC[0m
+  Rendered alerts/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 84ms (Views: 80.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/alerts/2/edit" for ::1 at 2017-04-01 15:28:18 -0400
+Processing by AlertsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlert Load (0.2ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering alerts/edit.html.erb within layouts/application
+  [1m[36mStatusOption Load (0.2ms)[0m  [1m[34mSELECT "status_options".* FROM "status_options"[0m
+  Rendered alerts/edit.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 113ms (Views: 110.1ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/alerts/2" for ::1 at 2017-04-01 15:28:21 -0400
+Processing by AlertsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G6qUZ3NBkrx6CJbEzKoCvl9yj3HdKZEqknkL1IQwWzUtfa3JWM6EN04k2aomC+qQowYyEgyR/9iaSEdHHIzCLg==", "alert"=>{"status"=>"1", "notes"=>"Received"}, "commit"=>"Update Alert", "id"=>"2"}
+  [1m[36mAlert Load (0.2ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameter: notes
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "alerts" SET "status" = ?, "updated_at" = ? WHERE "alerts"."id" = ?[0m  [["status", 1], ["updated_at", 2017-04-01 19:28:21 UTC], ["id", 2]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/alerts
+Completed 302 Found in 8ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/alerts" for ::1 at 2017-04-01 15:28:21 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.2ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts" ORDER BY created_at DESC[0m
+  Rendered alerts/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_shim.html.erb (1.1ms)
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 99ms (Views: 97.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/alerts" for ::1 at 2017-04-01 15:29:06 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.3ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts" ORDER BY created_at DESC[0m
+  Rendered alerts/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 85ms (Views: 82.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/alerts/1/edit" for ::1 at 2017-04-01 15:29:09 -0400
+Processing by AlertsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlert Load (0.2ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering alerts/edit.html.erb within layouts/application
+  Rendered alerts/edit.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/morgansansbury/RiverWatch/Erie/sheltered-everglades-96411/app/views/alerts/edit.html.erb:39: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end ;@output_buffer.to_s
+             ^
+/Users/morgansansbury/RiverWatch/Erie/sheltered-everglades-96411/app/views/alerts/edit.html.erb:40: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/morgansansbury/RiverWatch/Erie/sheltered-everglades-96411/app/views/alerts/edit.html.erb:42: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/alerts/edit.html.erb:39: syntax error, unexpected keyword_end, expecting ')'
+app/views/alerts/edit.html.erb:40: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/alerts/edit.html.erb:42: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.6ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (88.5ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (69.9ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (134.6ms)
+Started GET "/alerts/1/edit" for ::1 at 2017-04-01 15:29:43 -0400
+Processing by AlertsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlert Load (0.4ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering alerts/edit.html.erb within layouts/application
+  [1m[36mStatusOption Load (0.3ms)[0m  [1m[34mSELECT "status_options".* FROM "status_options"[0m
+  Rendered alerts/edit.html.erb within layouts/application (14.7ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 134ms (Views: 128.2ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/alerts/1" for ::1 at 2017-04-01 15:29:50 -0400
+Processing by AlertsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qlILVcLqRMYAVkntztv0KnqfZA6l6wIUmtBB9V45fetzvkkYMtEg3YJDoW+Ug45J+ZM9x0u0XBtovNITuNmc6w==", "alert"=>{"status"=>"1", "notes"=>"Received"}, "commit"=>"Update Alert", "id"=>"1"}
+  [1m[36mAlert Load (0.5ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameter: notes
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/alerts
+Completed 302 Found in 5ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/alerts" for ::1 at 2017-04-01 15:29:50 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.2ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts" ORDER BY created_at DESC[0m
+  Rendered alerts/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 126ms (Views: 123.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/alerts/1/edit" for ::1 at 2017-04-01 15:29:52 -0400
+Processing by AlertsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlert Load (0.2ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering alerts/edit.html.erb within layouts/application
+  [1m[36mStatusOption Load (0.2ms)[0m  [1m[34mSELECT "status_options".* FROM "status_options"[0m
+  Rendered alerts/edit.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_shim.html.erb (1.3ms)
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 120ms (Views: 116.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/alerts/2/edit" for ::1 at 2017-04-01 15:30:26 -0400
+Processing by AlertsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlert Load (0.6ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering alerts/edit.html.erb within layouts/application
+  Rendered alerts/edit.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.6ms)
+
+
+  
+SyntaxError (/Users/morgansansbury/RiverWatch/Erie/sheltered-everglades-96411/app/views/alerts/edit.html.erb:28: syntax error, unexpected tINTEGER, expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+    	selected: :2)  );@output_buffer.safe_append='
+    	            ^):
+  
+app/views/alerts/edit.html.erb:28: syntax error, unexpected tINTEGER, expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.7ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.5ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/console.js.erb within layouts/javascript (63.0ms)
+  Rendering /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/morgansansbury/.rvm/gems/ruby-2.3.0/gems/web-console-3.1.1/lib/web_console/templates/index.html.erb (119.8ms)
+Started GET "/alerts/2/edit" for ::1 at 2017-04-01 15:30:49 -0400
+Processing by AlertsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlert Load (0.2ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering alerts/edit.html.erb within layouts/application
+  [1m[36mStatusOption Load (0.2ms)[0m  [1m[34mSELECT "status_options".* FROM "status_options"[0m
+  Rendered alerts/edit.html.erb within layouts/application (8.3ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 113ms (Views: 107.8ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/alerts/2" for ::1 at 2017-04-01 15:31:21 -0400
+Processing by AlertsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"U0s/QFAyW+R2udS3i2AxVAAq922hNBu+IGmF8lffZzGKp30NoAk///SsPDXROEs3gyaupE9rRbHSBRYUsT+GMQ==", "alert"=>{"status"=>"1", "notes"=>"Received"}, "commit"=>"Update Alert", "id"=>"2"}
+  [1m[36mAlert Load (0.1ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameter: notes
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/alerts
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/alerts" for ::1 at 2017-04-01 15:31:21 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.2ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts" ORDER BY created_at DESC[0m
+  Rendered alerts/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 86ms (Views: 83.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/alerts/1/edit" for ::1 at 2017-04-01 15:31:23 -0400
+Processing by AlertsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlert Load (0.2ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering alerts/edit.html.erb within layouts/application
+  [1m[36mStatusOption Load (0.3ms)[0m  [1m[34mSELECT "status_options".* FROM "status_options"[0m
+  Rendered alerts/edit.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 88ms (Views: 85.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/alerts" for ::1 at 2017-04-01 15:33:41 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.3ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts" ORDER BY created_at DESC[0m
+  Rendered alerts/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 96ms (Views: 93.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/alerts/1/edit" for ::1 at 2017-04-01 15:33:44 -0400
+Processing by AlertsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlert Load (0.5ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering alerts/edit.html.erb within layouts/application
+  [1m[36mStatusOption Load (0.3ms)[0m  [1m[34mSELECT "status_options".* FROM "status_options"[0m
+  Rendered alerts/edit.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 108ms (Views: 104.5ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/alerts/1" for ::1 at 2017-04-01 15:33:46 -0400
+Processing by AlertsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+Fa3oRcJQsICiIbUTsxgJ2NgoFmLShGtYcV2pl9IUcrJONk+n8YAt8VDbSQ86962bPN1vWrgY0NcQ2AiyFwkqA==", "alert"=>{"status"=>"2", "notes"=>"Received"}, "commit"=>"Update Alert", "id"=>"1"}
+  [1m[36mAlert Load (0.2ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameter: notes
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "alerts" SET "status" = ?, "updated_at" = ? WHERE "alerts"."id" = ?[0m  [["status", 2], ["updated_at", 2017-04-01 19:33:46 UTC], ["id", 1]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/alerts
+Completed 302 Found in 8ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/alerts" for ::1 at 2017-04-01 15:33:46 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.2ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts" ORDER BY created_at DESC[0m
+  Rendered alerts/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 109ms (Views: 106.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/alerts/1/edit" for ::1 at 2017-04-01 15:34:08 -0400
+Processing by AlertsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlert Load (0.4ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering alerts/edit.html.erb within layouts/application
+  [1m[36mStatusOption Load (0.3ms)[0m  [1m[34mSELECT "status_options".* FROM "status_options"[0m
+  Rendered alerts/edit.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 100ms (Views: 96.5ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/alerts/1" for ::1 at 2017-04-01 15:34:13 -0400
+Processing by AlertsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9vQg8lxdGwLXTqqsjGRfTP8JJNLhIyh2k+Se+sGKMubHmk5t1JJZdxCFQVz+Q+Hd8JrxNgCJWpiuYoh+Vp5HhA==", "alert"=>{"status"=>"3", "notes"=>"Received"}, "commit"=>"Update Alert", "id"=>"1"}
+  [1m[36mAlert Load (0.1ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameter: notes
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "alerts" SET "status" = ?, "updated_at" = ? WHERE "alerts"."id" = ?[0m  [["status", 3], ["updated_at", 2017-04-01 19:34:13 UTC], ["id", 1]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/alerts
+Completed 302 Found in 8ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/alerts" for ::1 at 2017-04-01 15:34:13 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.2ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts" ORDER BY created_at DESC[0m
+  Rendered alerts/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 98ms (Views: 95.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/alerts/1/edit" for ::1 at 2017-04-01 15:34:16 -0400
+Processing by AlertsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlert Load (0.1ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering alerts/edit.html.erb within layouts/application
+  [1m[36mStatusOption Load (0.2ms)[0m  [1m[34mSELECT "status_options".* FROM "status_options"[0m
+  Rendered alerts/edit.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 86ms (Views: 83.1ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/alerts/1" for ::1 at 2017-04-01 15:34:17 -0400
+Processing by AlertsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Hf/HfN9C17b9lLqcw+pgI8Dxs/IW1YixvhcwkECjPqsskanjV42VwzpfUWyxzd6yz2JmFvd/+l+DkSYU17dLyQ==", "alert"=>{"status"=>"3", "notes"=>"Received"}, "commit"=>"Update Alert", "id"=>"1"}
+  [1m[36mAlert Load (0.1ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameter: notes
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/alerts
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/alerts" for ::1 at 2017-04-01 15:34:18 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.2ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts" ORDER BY created_at DESC[0m
+  Rendered alerts/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 101ms (Views: 98.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/alerts/2/edit" for ::1 at 2017-04-01 15:34:50 -0400
+Processing by AlertsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlert Load (0.1ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering alerts/edit.html.erb within layouts/application
+  [1m[36mStatusOption Load (0.2ms)[0m  [1m[34mSELECT "status_options".* FROM "status_options"[0m
+  Rendered alerts/edit.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 79ms (Views: 75.3ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/alerts/2" for ::1 at 2017-04-01 15:34:52 -0400
+Processing by AlertsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SGfPSKg48zAlNQfSTe/KWwQHiavndvTS+OjqJm/XZ3h+sPbmg7fluxEZSLynTiJ1+HM0yDbOmiDw2aa192v+Yw==", "alert"=>{"status"=>"2", "notes"=>"Received"}, "commit"=>"Update Alert", "id"=>"2"}
+  [1m[36mAlert Load (0.1ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameter: notes
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "alerts" SET "status" = ?, "updated_at" = ? WHERE "alerts"."id" = ?[0m  [["status", 2], ["updated_at", 2017-04-01 19:34:52 UTC], ["id", 2]]
+  [1m[35m (94.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/alerts
+Completed 302 Found in 101ms (ActiveRecord: 95.4ms)
+
+
+Started GET "/alerts" for ::1 at 2017-04-01 15:34:52 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.3ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts" ORDER BY created_at DESC[0m
+  Rendered alerts/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 80ms (Views: 77.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/alerts/2/edit" for ::1 at 2017-04-01 15:34:55 -0400
+Processing by AlertsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlert Load (0.1ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering alerts/edit.html.erb within layouts/application
+  [1m[36mStatusOption Load (0.2ms)[0m  [1m[34mSELECT "status_options".* FROM "status_options"[0m
+  Rendered alerts/edit.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 88ms (Views: 84.4ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/alerts/2" for ::1 at 2017-04-01 15:37:04 -0400
+Processing by AlertsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NpRs5XqRQrHTJe2eChRyFrmhJQGmoEx2kCLWMvZmm1IAQ1VLUR5UOucJovDgtZo4RdWYYncYIoSYE5qhbtoCSQ==", "alert"=>{"status"=>"2", "notes"=>"Received"}, "commit"=>"Update Alert", "id"=>"2"}
+  [1m[36mAlert Load (0.1ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameter: notes
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/alerts
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/alerts" for ::1 at 2017-04-01 15:37:04 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.2ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts" ORDER BY created_at DESC[0m
+  Rendered alerts/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 325ms (Views: 311.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/alerts" for ::1 at 2017-04-01 15:39:22 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.5ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts" ORDER BY created_at DESC[0m
+  [1m[36mStatusOption Load (0.1ms)[0m  [1m[34mSELECT  "status_options".* FROM "status_options" WHERE "status_options"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mStatusOption Load (0.1ms)[0m  [1m[34mSELECT  "status_options".* FROM "status_options" WHERE "status_options"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered alerts/index.html.erb within layouts/application (29.1ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 348ms (Views: 326.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/alerts/2/edit" for ::1 at 2017-04-01 15:39:32 -0400
+Processing by AlertsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlert Load (0.2ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering alerts/edit.html.erb within layouts/application
+  [1m[36mStatusOption Load (0.2ms)[0m  [1m[34mSELECT "status_options".* FROM "status_options"[0m
+  Rendered alerts/edit.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 110ms (Views: 87.3ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/alerts/2" for ::1 at 2017-04-01 15:39:33 -0400
+Processing by AlertsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iGi12iXbTrDsGNJQuXTod4bwEJj8MxaR7dd2xC4wyb++v4x0DlRYO9g0nT5T1QBZeoSt+y2LeGPl5jpXtoxQpA==", "alert"=>{"status"=>"2", "notes"=>"Received"}, "commit"=>"Update Alert", "id"=>"2"}
+  [1m[36mAlert Load (0.4ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameter: notes
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/alerts
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/alerts" for ::1 at 2017-04-01 15:39:33 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.4ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts" ORDER BY created_at DESC[0m
+  [1m[36mStatusOption Load (0.1ms)[0m  [1m[34mSELECT  "status_options".* FROM "status_options" WHERE "status_options"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mStatusOption Load (0.1ms)[0m  [1m[34mSELECT  "status_options".* FROM "status_options" WHERE "status_options"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered alerts/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 88ms (Views: 85.3ms | ActiveRecord: 0.6ms)
+
+

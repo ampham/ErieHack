@@ -33,8 +33,9 @@ class TextMessagesController < ApplicationController
 	def get_alert
 		@alert = Alert.new
 		new_alert = params["text"]
-		alert_body = new_alert.split(":")
+		# TODO: Regexp for message, reply "invalid" if not valid
 
+		alert_body = new_alert.split(":")
 		@alert.address = alert_body[1].strip
 		@alert.message = alert_body[2].strip
 		@alert.phone = params["phone"]
