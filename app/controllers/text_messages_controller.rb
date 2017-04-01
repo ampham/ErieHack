@@ -42,7 +42,7 @@ class TextMessagesController < ApplicationController
 			the_report << " #{alert_body[x]}"
 		end
 
-		Alert.create(message: the_report)
+		Alert.create(message: the_report.strip)
 		reply << the_report
 		
 		render json: { confirmation: reply }
