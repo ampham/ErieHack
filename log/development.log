@@ -24773,3 +24773,81 @@ Processing by AlertsController#index as HTML
 Completed 200 OK in 88ms (Views: 85.3ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/alerts" for ::1 at 2017-04-01 16:03:37 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.5ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts" ORDER BY created_at DESC[0m
+  [1m[36mStatusOption Load (0.1ms)[0m  [1m[34mSELECT  "status_options".* FROM "status_options" WHERE "status_options"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mStatusOption Load (0.1ms)[0m  [1m[34mSELECT  "status_options".* FROM "status_options" WHERE "status_options"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered alerts/index.html.erb within layouts/application (35.3ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 714ms (Views: 692.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/alerts" for ::1 at 2017-04-01 16:07:13 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.5ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts" ORDER BY created_at DESC[0m
+  [1m[36mStatusOption Load (0.1ms)[0m  [1m[34mSELECT  "status_options".* FROM "status_options" WHERE "status_options"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mStatusOption Load (0.1ms)[0m  [1m[34mSELECT  "status_options".* FROM "status_options" WHERE "status_options"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered alerts/index.html.erb within layouts/application (28.9ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 723ms (Views: 707.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/alerts" for ::1 at 2017-04-01 16:07:34 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.4ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts" ORDER BY created_at DESC[0m
+  [1m[36mStatusOption Load (0.2ms)[0m  [1m[34mSELECT  "status_options".* FROM "status_options" WHERE "status_options"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mStatusOption Load (0.1ms)[0m  [1m[34mSELECT  "status_options".* FROM "status_options" WHERE "status_options"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered alerts/index.html.erb within layouts/application (18.5ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 109ms (Views: 103.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/alerts" for ::1 at 2017-04-01 16:08:03 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.6ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts" ORDER BY created_at DESC[0m
+  [1m[36mStatusOption Load (0.2ms)[0m  [1m[34mSELECT  "status_options".* FROM "status_options" WHERE "status_options"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mStatusOption Load (0.2ms)[0m  [1m[34mSELECT  "status_options".* FROM "status_options" WHERE "status_options"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered alerts/index.html.erb within layouts/application (20.7ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 105ms (Views: 98.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/alerts" for ::1 at 2017-04-01 16:08:20 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.5ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts" ORDER BY created_at DESC[0m
+  [1m[36mStatusOption Load (0.1ms)[0m  [1m[34mSELECT  "status_options".* FROM "status_options" WHERE "status_options"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mStatusOption Load (0.1ms)[0m  [1m[34mSELECT  "status_options".* FROM "status_options" WHERE "status_options"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered alerts/index.html.erb within layouts/application (23.2ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 125ms (Views: 118.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/alerts" for ::1 at 2017-04-01 16:08:41 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.4ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts" ORDER BY created_at DESC[0m
+  [1m[36mStatusOption Load (0.1ms)[0m  [1m[34mSELECT  "status_options".* FROM "status_options" WHERE "status_options"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mStatusOption Load (0.1ms)[0m  [1m[34mSELECT  "status_options".* FROM "status_options" WHERE "status_options"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered alerts/index.html.erb within layouts/application (19.9ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 110ms (Views: 103.2ms | ActiveRecord: 1.8ms)
+
+

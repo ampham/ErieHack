@@ -8,7 +8,6 @@
 		  <th>Alert</th>
 		  <th>Status</th>
 		  <th>Address</th>
-		  <th>Notes</th>
 		  <th>Phone #</th>
 		  <th colspan="3"></th>
 		</tr>
@@ -17,12 +16,11 @@
 		<tr>
 			<td><%= alert.id %></td>
 			<td><%= alert.created_at.strftime("%B %d, %Y") %></td>
-			<td><%= alert.message %></td>
+			<td><%= alert.short_version %></td>
 			<td><%= alert.get_status %></td>
 			<td><%= alert.address %></td>
-			<td><%= alert.notes %></td>
 			<td><%= alert.phone %></td>
-			<td><%= link_to 'Edit', edit_alert_path(alert) %></td>
+			<td><%= link_to 'Details', edit_alert_path(alert) %></td>
 		</tr>
 	<% end %>
 </table>
