@@ -20,7 +20,8 @@ class TextMessagesController < ApplicationController
 			elsif matching_reports.size > 1
 				reply = "There are #{matching_reports.size} lead reports for #{incoming_text}:\n"
 				for report in matching_reports
-					reply << "#{report.street}: #{report.lead} ppb\n"
+					lead = report.lead == -1.0 ? "None detected" : report.lead
+					reply << "#{report.street}: #{lead} ppb\n"
 				end
 			else
 				reply = "Not a valid zip code!"
