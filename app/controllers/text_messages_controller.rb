@@ -4,7 +4,7 @@ class TextMessagesController < ApplicationController
 
 	def reply_zip
 		@reports = BuffaloReport.all
-		incoming_text = params["text"]
+		incoming_text = params["text"].split("zip")[1].strip
 
 		matching_reports = []
 		for report in @reports
