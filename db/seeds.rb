@@ -5,38 +5,77 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
-# generates a random float for an Update's values
-def random_range
-  rand * (9) + 1
-end
-
-seed_locations = ["Ransom Creek", "Tonawanda Creek", "Buffalo Creek", "Cazenovia Creek",
-"Buffalo River", "Erie Basin & Black Rock Canal", "Scajaquada Creek", "Ellicott Creek",
-"Cayuga Creek (Erie County)", "Tonawanda Creek (Lower Main Stem)", "Cayuga & Bergholtz Creek (Niagara Falls)", 
-"Gill Creek"]
-
-the_description = "A location"
+=begin
+streets = ['Fillmore Ave', 'Domedion Ave', 'Rickert Ave', 'Norwood Ave', ]
 
 for location in seed_locations
   Location.create(title: location, 
     description: the_description
     )
 end
+=end
+
+# get an array and read the numbers in
+lines = []
+File.open('buffdata.txt', 'r') do |x|  
+  while line = x.gets  
+    lines << line 
+  end  
+end  
+
+streets = []
+zips = []
+leads = []
+
+counter = 6
+for w in lines
+  if counter % 6 == 0
+    streets << w 
+  elsif counter % 6 == 1
+    zips << w 
+  elsif counter % 6 == 5
+    leads << w 
+  end
+  counter += 1
+end
+
+for q in 0..117
+  street = streets[q]
+  zip = zips[q]
+  lead = leads[q] == "ND" ? -1 : leads[q].to_f
+
+  if lead == 0.0
+    lead = -1
+  end
+
+  BuffaloReport.create(street: street, zip: zip, lead: lead)
+end
 
 =begin
-20.times do |p|
-  lead = random_range
-  mercury = random_range
-  plutonium = random_range
-  location = rand(1..2)
-  user = rand(2)
-  Update.create(lead: lead,
-    mercury: mercury,
-    plutonium: plutonium,
-    location_id: location,
-    user_id: user
-    )
+for i in 0..117
+  street = streets[i]
+  zip = zips[i]
+  lead = leads[i] == 'ND' ? -1 : leads.to_f
+  BuffaloReport.create()
+end
+=end
+
+=begin
+puts "Streets has " + streets.size.to_s
+for a in streets[98..117]
+  puts a
+end
+
+puts "Zips has " + zips.size.to_s
+puts "Zips"
+for b in zips[98..117]
+  puts b 
+end
+
+puts "Leads has " + leads.size.to_s
+puts " "
+for c in leads[98..117]
+  puts c
 end
 =end
 
