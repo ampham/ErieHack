@@ -48,6 +48,18 @@ class TextMessagesController < ApplicationController
 		render json: { confirmation: reply }
 	end
 
+	def get_status
+		# TODO: This needs A LOT of sanity checking
+		incoming = params["text"]
+		alert_id = incoming.split(" ")[1].strip.to_i
+		alert_status = Alert.find_by_id(alert_id).get_status
+
+		reply = "The status of ticket number #{alert_id} is #{alert_status}. Thanks for contacting Waterwatcher"
+
+		render json: { status: reply }
+
+	end
+
 	def test_json
 		render json: { zip: "12345" }
 	end

@@ -41,6 +41,7 @@ Rails.application.routes.draw do
 
   post '/zip',    to: 'text_messages#reply_zip'
   post '/alert',  to: 'text_messages#get_alert'
+  post '/status', to: 'text_messages#get_status'
   get '/test',    to: 'text_messages#test_json'
 
   # Twilio test
