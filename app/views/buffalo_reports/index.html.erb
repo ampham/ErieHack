@@ -2,6 +2,9 @@
 
 <% @reports.each do |rep| %>
 	<h3><%= rep.street %></h3>
-	<p>ZIP Code: <%= rep.zip %></p>
-	<p>Lead concentration: <%= rep.lead %> ppb</p>
+	<p><strong>ZIP Code:</strong> <%= rep.zip %></p>
+	<% # If the lead value is -1, then it's actually not detected %>
+	<% lead = rep.lead == -1.0 ? "None detected" : "#{rep.lead} ppb" %>
+	<p><strong>Lead concentration:</strong> <%= lead %></p>
+	<br>
 <% end %>
