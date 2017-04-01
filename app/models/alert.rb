@@ -5,6 +5,6 @@ class Alert < ApplicationRecord
 	end
 
 	def short_version
-		retval = message.length > 30 ? message[0..29] << "..." : message
+		retval = message.length > 35 ? message[0..34] << "..." : message
 	end
 end
