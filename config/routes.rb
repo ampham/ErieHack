@@ -7,8 +7,8 @@ Rails.application.routes.draw do
   resources :locations
   resources :updates
   resources :statuses
-  resources :buffalo_reports, only: [:index]
-  resources :alerts, only: [:index]
+  resources :buffalo_reports,     only: [:index]
+  resources :alerts,              only: [:index]
 
   root 'static_pages#home'
   get  '/help',    to: 'static_pages#help'
