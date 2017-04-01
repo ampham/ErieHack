@@ -43,7 +43,7 @@ class TextMessagesController < ApplicationController
 
 		@alert.save
 		reply = "You have reported #{@alert.message} for #{@alert.address}. Your " 
-			+ "ticket number is #{@alert.id}. Thanks for using Waterwatcher."
+			<< "ticket number is #{@alert.id}. Thanks for using Waterwatcher."
 		
 		render json: { confirmation: reply }
 	end
