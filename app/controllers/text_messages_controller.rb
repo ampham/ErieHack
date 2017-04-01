@@ -13,15 +13,15 @@ class TextMessagesController < ApplicationController
 			end	
 		end
 
-		response = "Yeah"
+		reply = "Yeah"
 		if matching_reports.size == 1
-			response = "Lead concentration for #{matching_reports[0]} in #{incoming_text} "
+			reply = "Lead concentration for #{matching_reports[0]} in #{incoming_text} "
 				+ "is #{matching_reports.lead} ppb."
 			else 
 				resposne = "Not a valid zip code!"
 		end
 
-		render json: { response: "This is a response"}
+		render json: { response: reply}
 
 		#render json: { text: incoming_text }
 	end
