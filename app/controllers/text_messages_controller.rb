@@ -35,7 +35,10 @@ class TextMessagesController < ApplicationController
 
 	def get_alert
 		new_alert = params["text"]
-		render json: { confirmation: "Something relevant"}
+		alert_body = new_alert.split(" ")
+		reply = "You wanted to report #{alert_body}"
+
+		render json: { confirmation: reply}
 	end
 
 	def test_json
