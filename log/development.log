@@ -23843,3 +23843,186 @@ Processing by AlertsController#index as HTML
 Completed 200 OK in 227ms (Views: 221.5ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/alerts/" for ::1 at 2017-04-01 13:43:02 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (18.8ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts"[0m
+  Rendered alerts/index.html.erb within layouts/application (40.4ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (5.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 1061ms (Views: 1019.2ms | ActiveRecord: 19.5ms)
+
+
+Started GET "/alerts/1/edit" for ::1 at 2017-04-01 13:43:22 -0400
+Processing by AlertsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlert Load (0.5ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering alerts/edit.html.erb within layouts/application
+  Rendered alerts/edit.html.erb within layouts/application (646.8ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (5.5ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 2731ms (Views: 2586.4ms | ActiveRecord: 1.3ms)
+
+
+Started PATCH "/alerts/1" for ::1 at 2017-04-01 13:43:29 -0400
+Processing by AlertsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w6QK011c+g9oj74RNFncwaQsDAJ+U+IhE2ilK6VLAy7yymRM1ZO4eq9EVeFGfmJQq7/Z5p/5kM8u7rOvMl92TA==", "alert"=>{"status"=>"2", "notes"=>"Received"}, "commit"=>"Update Alert", "id"=>"1"}
+  [1m[36mAlert Load (0.5ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameter: notes
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (13.3ms)[0m  [1m[33mUPDATE "alerts" SET "status" = ?, "updated_at" = ? WHERE "alerts"."id" = ?[0m  [["status", 2], ["updated_at", 2017-04-01 17:43:29 UTC], ["id", 1]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/alerts/1
+Completed 302 Found in 23ms (ActiveRecord: 15.0ms)
+
+
+Started GET "/alerts/1" for ::1 at 2017-04-01 13:43:29 -0400
+Processing by AlertsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlert Load (0.5ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering alerts/show.html.erb within layouts/application
+  Rendered alerts/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 117ms (Views: 112.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/alerts/" for ::1 at 2017-04-01 13:44:27 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.4ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts"[0m
+  Rendered alerts/index.html.erb within layouts/application (16.4ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 1700ms (Views: 1628.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/alerts/1/edit" for ::1 at 2017-04-01 13:44:38 -0400
+Processing by AlertsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlert Load (0.2ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering alerts/edit.html.erb within layouts/application
+  Rendered alerts/edit.html.erb within layouts/application (660.8ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 840ms (Views: 792.7ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/alerts/1" for ::1 at 2017-04-01 13:44:43 -0400
+Processing by AlertsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uvoTPsLlGU42HlSgiJl4WSW0UEIpUY5W++4K7DucdMmLlH2hSipbO/HVv1D6vsbIKieFpsj7/LjGaBxorIgBqw==", "alert"=>{"status"=>"3", "notes"=>"Received"}, "commit"=>"Update Alert", "id"=>"1"}
+  [1m[36mAlert Load (0.1ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" WHERE "alerts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameter: notes
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "alerts" SET "status" = ?, "updated_at" = ? WHERE "alerts"."id" = ?[0m  [["status", 3], ["updated_at", 2017-04-01 17:44:43 UTC], ["id", 1]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/alerts
+Completed 302 Found in 10ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/alerts" for ::1 at 2017-04-01 13:44:43 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.2ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts"[0m
+  Rendered alerts/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 78ms (Views: 74.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/alerts" for ::1 at 2017-04-01 13:46:13 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.4ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts"[0m
+  Rendered alerts/index.html.erb within layouts/application (11.9ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 2802ms (Views: 2786.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/alerts" for ::1 at 2017-04-01 13:46:32 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.5ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts"[0m
+  Rendered alerts/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 2719ms (Views: 2716.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/alerts" for ::1 at 2017-04-01 14:00:08 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.4ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts"[0m
+  Rendered alerts/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 574ms (Views: 553.4ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mAlert Load (0.2ms)[0m  [1m[34mSELECT  "alerts".* FROM "alerts" ORDER BY "alerts"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/alerts" for ::1 at 2017-04-01 14:02:22 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.6ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts"[0m
+  Rendered alerts/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 3986ms (Views: 3962.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/alerts" for ::1 at 2017-04-01 14:03:22 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.4ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts"[0m
+  Rendered alerts/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 3132ms (Views: 3119.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/alerts" for ::1 at 2017-04-01 14:03:57 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.5ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts"[0m
+  Rendered alerts/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 2373ms (Views: 2369.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/alerts" for ::1 at 2017-04-01 14:04:56 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.2ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts"[0m
+  Rendered alerts/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 2339ms (Views: 2335.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/alerts" for ::1 at 2017-04-01 14:05:07 -0400
+Processing by AlertsController#index as HTML
+  Rendering alerts/index.html.erb within layouts/application
+  [1m[36mAlert Load (0.6ms)[0m  [1m[34mSELECT "alerts".* FROM "alerts"[0m
+  Rendered alerts/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 2289ms (Views: 2286.6ms | ActiveRecord: 0.6ms)
+
+

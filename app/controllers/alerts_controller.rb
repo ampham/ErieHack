@@ -14,7 +14,7 @@ class AlertsController < ApplicationController
 	# TODO: Tighten up params in general
 	def update
 		if @alert.update(alert_params)
-			redirect_to alert_path(@alert), notice: 'Alert has been updated'
+			redirect_to alerts_path, notice: "Alert #{@alert.id} has been updated"
 		end
 	end
 
