@@ -38,8 +38,9 @@ Rails.application.routes.draw do
     get '/test', to: 'buffalo_reports#test'
   end
 
-  post '/zip', to: 'text_messages#reply_zip'
-  get '/test', to: 'text_messages#test_json'
+  post '/zip',    to: 'text_messages#reply_zip'
+  post '/report', to: 'text_messages#take_report'
+  get '/test',    to: 'text_messages#test_json'
 
   # Twilio test
   post '/sms', to: 'text_messages#send_text'

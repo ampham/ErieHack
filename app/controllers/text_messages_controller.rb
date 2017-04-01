@@ -32,6 +32,11 @@ class TextMessagesController < ApplicationController
 		#render json: { text: incoming_text }
 	end
 
+	def get_alert
+		new_alert = params["text"]
+		render json: { confirmation: new_alert }
+	end
+
 	def test_json
 		render json: { zip: "12345" }
 	end
