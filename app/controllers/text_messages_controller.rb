@@ -42,7 +42,7 @@ class TextMessagesController < ApplicationController
 		@alert.notes = "Received"
 
 		@alert.save
-		reply = "You have reported \"#{@alert.message}\" for #{@alert.address}. Your " 
+		reply = "You have reported #{@alert.message} for #{@alert.address}. Your " 
 			+ "ticket number is #{@alert.id}. Thanks for using Waterwatcher."
 		
 		render json: { confirmation: reply }
