@@ -1,6 +1,13 @@
 class TextMessagesController < ApplicationController
 	skip_before_action :verify_authenticity_token
 
+
+	def reply_zip
+
+	end
+
+
+
 	# TODO: Move a lot of this into the models
 	def send_text
 		received_message = params["Body"]

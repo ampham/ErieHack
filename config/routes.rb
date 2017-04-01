@@ -34,5 +34,8 @@ Rails.application.routes.draw do
   # temporary endpoint for demonstration only
   get '/current' => 'api_locations#current'
 
+  post '/zip', to: 'text_messages#reply_zip'
+
+  # Twilio test
   post '/sms', to: 'text_messages#send_text'
 end
