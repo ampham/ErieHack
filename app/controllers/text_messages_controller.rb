@@ -30,7 +30,9 @@ class TextMessagesController < ApplicationController
 		render json: { response: reply}
 	end
 
+	# TODO: rename this to accurately reflect the purpose of just sending a prompt
 	def get_alert
+=begin
 		@alert = Alert.new
 		new_alert = params["text"]
 		# TODO: Regexp for message, reply "invalid" if not valid
@@ -44,8 +46,16 @@ class TextMessagesController < ApplicationController
 
 		@alert.save
 		reply = "You have reported #{@alert.message} at #{@alert.address}. Your ticket number is #{@alert.id}. Thanks for using Waterwatcher."
-		
-		render json: { confirmation: reply }
+=end
+		temp_response = "Send the report now."
+
+		render json: { confirmation: temp_response }
+	end
+
+	# TODO: Rename this
+	def alert_report
+		reply = params["text"]
+		render json: { response: reply }
 	end
 
 	def get_status

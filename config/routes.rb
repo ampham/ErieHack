@@ -8,7 +8,8 @@ Rails.application.routes.draw do
   resources :updates
   resources :statuses
   resources :buffalo_reports,     only: [:index]
-  resources :alerts            
+  resources :alerts       
+  #VALID_ADDRESS_REGEX = /\A\d{1,6}\s\w{1,15}\s\w{1,5}\z/
 
   root 'static_pages#home'
   get  '/help',    to: 'static_pages#help'
@@ -39,9 +40,11 @@ Rails.application.routes.draw do
     get '/test', to: 'buffalo_reports#test'
   end
 
-  post '/zip',    to: 'text_messages#reply_zip'
-  post '/alert',  to: 'text_messages#get_alert'
-  post '/status', to: 'text_messages#get_status'
+  post '/zip',          to: 'text_messages#reply_zip'
+  post '/alert',        to: 'text_messages#get_alert'
+  post '/status',       to: 'text_messages#get_status'
+  post '/alert_report', to: 'text_messages#alert_report'
+
   get '/test',    to: 'text_messages#test_json'
 
   # Twilio test
