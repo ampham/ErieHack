@@ -37,8 +37,8 @@ class TextMessagesController < ApplicationController
 		puts " "
 		puts " "
 		puts "THERE SHOULD BE SOMETHING BENEATH HERE!!!!"
-		puts params["values"][2]
-		puts params["values"][3]
+		puts params["values"[2]]
+		puts params["values"[3]]
 		#puts the_message
 		puts " "
 		puts " "
