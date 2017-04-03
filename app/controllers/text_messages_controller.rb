@@ -36,8 +36,8 @@ class TextMessagesController < ApplicationController
 		the_message = params["values"][3]["text"]
 		puts " "
 		puts " "
-		puts the_address
-		puts the_message
+		puts params["values"]
+		#puts the_message
 		puts " "
 		puts " "
 =begin
