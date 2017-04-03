@@ -1,5 +1,6 @@
 <h1>Edit Alert Status</h1>
 
+<% # NOTE This is just copied from "Edit", please clean it up %>
 <%= form_for(@alert) do |f| %>
 
   <div class="field">
@@ -28,9 +29,5 @@
 
   <div class="field">
     <%= f.label :notes %>: <%= @alert.notes %>
-  </div>
-
-	<div class="actions">
-    <%= f.submit %>
   </div>
 <% end %>
