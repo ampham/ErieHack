@@ -32,6 +32,12 @@ class TextMessagesController < ApplicationController
 
 	# TODO: rename this to accurately reflect the purpose of just sending a prompt
 	def get_alert
+		text = params["text"]
+		puts " "
+		puts " "
+		puts text
+		puts " "
+		puts " "
 =begin
 		@alert = Alert.new
 		new_alert = params["text"]

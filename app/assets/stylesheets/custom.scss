@@ -141,15 +141,6 @@ aside {
   }
 }
 
-table td {
-  padding: 10px;
-}
-
-table th {
-  padding: 10px;
-  font-size: 1.3em;
-}
-
 .gravatar {
   float: left;
   margin-right: 10px;
@@ -212,3 +203,24 @@ input {
     border-bottom: 1px solid $gray-lighter;
   }
 }
+
+/* Index Tables */
+
+table td {
+  padding: 10px;
+}
+
+table th {
+  padding: 10px;
+  font-size: 1.3em;
+}
+
+.bluerow  {
+  //background-color: blue;
+  //opacity: 0.2;
+  td {
+    color: black;
+    opacity: 1;
+  }
+}
+

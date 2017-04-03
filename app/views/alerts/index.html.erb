@@ -1,5 +1,5 @@
 <h1>Water Quality Alerts</h1>
-
+<% row = 0 %>
 <table>
 	<thead>
 		<tr>
@@ -13,7 +13,11 @@
 		</tr>
 	</thead>
 	<% @alerts.each do |alert| %>
-		<tr>
+		<% if row %2 == 1 %>
+			<tr class="bluerow">
+		<% else  %>
+			<tr>
+		<%end %>
 			<td><%= alert.id %></td>
 			<td><%= alert.created_at.strftime("%B %d, %Y") %></td>
 			<td><%= alert.short_version %></td>
@@ -22,5 +26,6 @@
 			<td><%= alert.phone %></td>
 			<td><%= link_to 'Details', edit_alert_path(alert) %></td>
 		</tr>
+		<% row += 1 %>
 	<% end %>
 </table>
