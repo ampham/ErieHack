@@ -36,15 +36,6 @@ class TextMessagesController < ApplicationController
 		phone_number = params["phone"]
 		the_address = incoming[2]["text"]
 		the_message = incoming[3]["text"]
-		puts " "
-		puts " "
-		puts "THERE SHOULD BE SOMETHING BENEATH HERE!!!!"
-		puts the_address
-		puts the_message
-		puts phone_number
-		#puts the_message
-		puts " "
-		puts " "
 
 		@alert = Alert.new
 		# TODO: Regexp for message, reply "invalid" if not valid
@@ -56,9 +47,6 @@ class TextMessagesController < ApplicationController
 		@alert.save
 
 		reply = "You have reported #{@alert.message} at #{@alert.address}. Your ticket number is #{@alert.id}. Thanks for using Waterwatcher."
-
-		temp_response = "Send the report now."
-
 		render json: { confirmation: reply }
 	end
 
