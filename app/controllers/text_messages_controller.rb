@@ -33,6 +33,7 @@ class TextMessagesController < ApplicationController
 	# TODO: rename this to accurately reflect the purpose of just sending a prompt
 	def get_alert
 		incoming = JSON.parse(params["values"])
+		phone_number = params["phone"]
 		the_address = incoming[2]["text"]
 		the_message = incoming[3]["text"]
 		puts " "
@@ -40,17 +41,15 @@ class TextMessagesController < ApplicationController
 		puts "THERE SHOULD BE SOMETHING BENEATH HERE!!!!"
 		puts the_address
 		puts the_message
+		puts phone_number
 		#puts the_message
 		puts " "
 		puts " "
 =begin
 		@alert = Alert.new
-		new_alert = params["text"]
 		# TODO: Regexp for message, reply "invalid" if not valid
-
-		alert_body = new_alert.split(":")
-		@alert.address = alert_body[1].strip
-		@alert.message = alert_body[2].strip
+		@alert.address = the_address
+		@alert.message = the_message
 		@alert.phone = params["phone"]
 		@alert.status = 1
 		@alert.notes = "Received"
