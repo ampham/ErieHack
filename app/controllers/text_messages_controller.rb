@@ -32,10 +32,12 @@ class TextMessagesController < ApplicationController
 
 	# TODO: rename this to accurately reflect the purpose of just sending a prompt
 	def get_alert
-		text = params["text"]
+		the_address = params["values"][2]["text"]
+		the_message = params["values"][3]["text"]
 		puts " "
 		puts " "
-		puts text
+		puts the_address
+		puts the_message
 		puts " "
 		puts " "
 =begin
