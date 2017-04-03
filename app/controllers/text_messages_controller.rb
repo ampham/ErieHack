@@ -33,8 +33,8 @@ class TextMessagesController < ApplicationController
 	# TODO: rename this to accurately reflect the purpose of just sending a prompt
 	def get_alert
 		incoming = JSON.parse(params["values"])
-		the_address = incoming[2]
-		the_message = incoming[3]
+		the_address = incoming[2]["text"]
+		the_message = incoming[3]["text"]
 		puts " "
 		puts " "
 		puts "THERE SHOULD BE SOMETHING BENEATH HERE!!!!"
