@@ -45,21 +45,21 @@ class TextMessagesController < ApplicationController
 		#puts the_message
 		puts " "
 		puts " "
-=begin
+
 		@alert = Alert.new
 		# TODO: Regexp for message, reply "invalid" if not valid
 		@alert.address = the_address
 		@alert.message = the_message
-		@alert.phone = params["phone"]
+		@alert.phone = phone_number
 		@alert.status = 1
 		@alert.notes = "Received"
-
 		@alert.save
+
 		reply = "You have reported #{@alert.message} at #{@alert.address}. Your ticket number is #{@alert.id}. Thanks for using Waterwatcher."
-=end
+
 		temp_response = "Send the report now."
 
-		render json: { confirmation: temp_response }
+		render json: { confirmation: reply }
 	end
 
 	# TODO: Rename this
