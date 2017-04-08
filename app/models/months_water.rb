@@ -1,0 +1,2 @@
+class MonthsWater < ApplicationRecord
+end

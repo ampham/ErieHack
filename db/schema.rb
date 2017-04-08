@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170401190716) do
+ActiveRecord::Schema.define(version: 20170408155830) do
+
+  create_table "accounts", force: :cascade do |t|
+    t.string   "name"
+    t.string   "phone"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "alerts", force: :cascade do |t|
     t.text     "message"
@@ -37,6 +44,18 @@ ActiveRecord::Schema.define(version: 20170401190716) do
     t.datetime "updated_at",     null: false
     t.string   "stream_class"
     t.text     "quality_issues"
+  end
+
+  create_table "months_waters", force: :cascade do |t|
+    t.integer  "gallons"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "reports", force: :cascade do |t|
+    t.text     "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "status_options", force: :cascade do |t|
