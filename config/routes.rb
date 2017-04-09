@@ -45,7 +45,7 @@ Rails.application.routes.draw do
   post '/status',       to: 'text_messages#get_status'
   post '/alert_report', to: 'text_messages#alert_report'
 
-  get '/test',    to: 'text_messages#test_json'
+  get '/test',    to: 'text_messages#get_alert'
 
   # Twilio test
   post '/sms', to: 'text_messages#send_text'

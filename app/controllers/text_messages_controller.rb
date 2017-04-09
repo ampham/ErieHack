@@ -46,8 +46,14 @@ class TextMessagesController < ApplicationController
 		@alert.notes = "Received"
 		@alert.save
 
-		reply = "You have reported #{@alert.message} at #{@alert.address}. Your ticket number is #{@alert.id}. Thanks for using Waterwatcher."
-		render json: { confirmation: reply }
+		reply = {
+			message: the_message
+			address: the_address
+			id: @alert.id
+		}
+
+		#reply = "You have reported #{@alert.message} at #{@alert.address}. Your ticket number is #{@alert.id}. Thanks for using Waterwatcher."
+		render json: reply
 	end
 
 	# TODO: Rename this
