@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'reports/edit'
+
+  get 'reports/index'
+
+  get 'reports/show'
+
 	resources :users
   # The only RESTful action we want for account_activation is edit, where the 
   # user will click an activation link to change their 'activated' attribute 
@@ -8,7 +14,8 @@ Rails.application.routes.draw do
   resources :updates
   resources :statuses
   resources :buffalo_reports,     only: [:index]
-  resources :alerts       
+  resources :alerts     
+  resources :reports,             only: [:edit, :index, :show]  
   #VALID_ADDRESS_REGEX = /\A\d{1,6}\s\w{1,15}\s\w{1,5}\z/
 
   root 'static_pages#home'
