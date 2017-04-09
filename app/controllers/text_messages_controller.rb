@@ -46,10 +46,6 @@ class TextMessagesController < ApplicationController
 		@alert.notes = "Received"
 		@alert.save
 
-		reply = {
-			
-		}
-
 		render json: { 	message: the_message,
 										address: the_address,
 										id: @alert.id }
