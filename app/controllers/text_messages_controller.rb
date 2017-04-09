@@ -47,8 +47,8 @@ class TextMessagesController < ApplicationController
 		@alert.save
 
 		reply = {
-			message: the_message
-			address: the_address
+			message: the_message,
+			address: the_address,
 			id: @alert.id
 		}
 
