@@ -6,10 +6,21 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-options = ['Received', 'Under Investigation', 'Resolved']
+bodies = ['blah', 'The water is bad', 'Cthulhu is emerging from the faucet', 'Something is very wrong']
+account_ids = [0, 1, 2, 3]
+statuses = ['blah', 'Received', 'Under Investigation', 'Resolved']
+note = 'Received'
+addresses = ['blah', '23 Null St.', '55 Pointer Dr.', '45 Tree Ln']
 
-for x in options
-  StatusOption.create(name: x)
+for x in 1..3
+  Report.create(  body: bodies[x],
+                  account_id: 1,
+                  status: 1,
+                  created_at: DateTime.now,
+                  updated_at: DateTime.now,
+                  notes: note,
+                  address: addresses[x])
+  puts bodies[x]
 end
 
 =begin

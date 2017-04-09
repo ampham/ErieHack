@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   resources :statuses
   resources :buffalo_reports,     only: [:index]
   resources :alerts     
-  resources :reports,             only: [:edit, :index, :show]  
+  resources :reports          
   #VALID_ADDRESS_REGEX = /\A\d{1,6}\s\w{1,15}\s\w{1,5}\z/
 
   root 'static_pages#home'

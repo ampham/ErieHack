@@ -1,2 +1,36 @@
-<h1>Reports#edit</h1>
-<p>Find me in app/views/reports/edit.html.erb</p>
+<h1>Edit Report Status</h1>
+
+<%= form_for(@report) do |f| %>
+
+  <div class="field">
+    <%= f.label :id %>: <%= @report.id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :body %>: <%= @report.body %>
+  </div>
+
+  <div class="field">
+    <%= f.label :address %>: <%= @report.address %>
+  </div>
+
+  <div class="field">
+    <%= f.label :created_at %>: <%= @report.created_at.strftime("%B %d, %Y") %>
+  </div>
+
+  <div class="field">
+    <%= f.label :status %>
+    <% # http://stackoverflow.com/questions/21287573/showing-current-value-in-select-tag  %>
+    <%= f.select(:status, options_for_select(StatusOption.all.collect { |s| [s.name, s.id] }, 
+    	@report.status )) %>
+  </div>
+
+  <div class="field">
+    <%= f.label :notes %>
+    <%= f.text_area :notes %>
+  </div>
+
+	<div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
