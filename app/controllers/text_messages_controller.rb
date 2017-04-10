@@ -34,8 +34,17 @@ class TextMessagesController < ApplicationController
 	def get_alert
 		incoming = JSON.parse(params["values"])
 		phone_number = params["phone"]
+		user_name = params["contact_name"]
 		the_address = incoming[2]["text"]
 		the_message = incoming[3]["text"]
+
+		puts ""
+		puts ""
+		puts "NAME IS BELOW HERE"
+		puts user_name
+		puts ""
+		puts ""
+
 
 		@account = Account.find_by phone: phone_number
 
