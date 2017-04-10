@@ -37,18 +37,24 @@ class TextMessagesController < ApplicationController
 		the_address = incoming[2]["text"]
 		the_message = incoming[3]["text"]
 
-		@alert = Alert.new
+		@account = Account.find_by phone: phone_number
+
+		if @account == nil
+			@account = Account.create(name: "Henry Walter", phone: phone_number)
+		end
+
+		@report = Report.new
 		# TODO: Regexp for message, reply "invalid" if not valid
-		@alert.address = the_address
-		@alert.message = the_message
-		@alert.phone = phone_number
-		@alert.status = 1
-		@alert.notes = "Received"
-		@alert.save
+		@report.address = the_address
+		@report.body = the_message
+		@report.account_id = @account.id
+		@report.status = 1
+		@report.notes = "Received"
+		@report.save
 
 		render json: { 	message: the_message,
 										address: the_address,
-										id: @alert.id }
+										id: @report.id }
 	end
 
 	# TODO: Rename this

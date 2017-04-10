@@ -20,7 +20,7 @@ for x in 1..3
                   updated_at: DateTime.now,
                   notes: note,
                   address: addresses[x])
-  puts bodies[x]
+  #puts bodies[x]
 end
 
 =begin
