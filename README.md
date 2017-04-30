@@ -1,7 +1,7 @@
 # WaterWatcher
 
 This is a project for 
-[*Erie Hack*](http://eriehack.io/) competition in cooperation with
+[*Erie Hack*](http://eriehack.io/) in cooperation with
 [*Buffalo Niagara Riverkeeper*](http://bnriverkeeper.org/).
 
 The goal is to create a text messaging service to allow residents of Western New York
