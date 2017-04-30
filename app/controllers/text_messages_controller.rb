@@ -38,18 +38,10 @@ class TextMessagesController < ApplicationController
 		the_address = incoming[2]["text"]
 		the_message = incoming[3]["text"]
 
-		puts ""
-		puts ""
-		puts "NAME IS BELOW HERE"
-		puts user_name
-		puts ""
-		puts ""
-
-
 		@account = Account.find_by phone: phone_number
-
+		
 		if @account == nil
-			@account = Account.create(name: "Henry Walter", phone: phone_number)
+			@account = Account.create(name: user_name, phone: phone_number)
 		end
 
 		@report = Report.new
